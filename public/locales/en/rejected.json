@@ -1,0 +1,41 @@
+{
+    "pageTitle": "Rejected Students List",
+    "table": {
+      "fullName": "Student Name",
+      "createdAt": "Registration Date",
+      "actions": "Actions",
+      "details": "Details",
+      "nationalId": "National ID",
+      "university": "University",
+      "college": "College",
+      "department": "Department",
+      "status": "Status"
+    },
+    "Accept":"The Student has been accepted successfully",
+      "studentDetails": "Student Details",
+      "close": "Close",
+      "idCardImage": "National ID Image",
+      "idCardImageAlt": "National ID Image",
+      "name": "Full Name",
+      "nationality": "Nationality",
+      "nationalId": "National ID Number",
+      "mobileNumber": "Mobile Number",
+      "email": "Email Address",
+      "accept": "Accept",
+      "edit": "Edit data",
+      "loading":"Loading",
+      "save":"Save Data",
+      "errors": {
+      "required": "This field is required",
+      "arabic_only": "Please enter Arabic letters only",
+      "english_only": "Please enter English letters only",
+      "invalid_id": "National ID must be 14 digits"
+    },
+    "userUpdated": "User Updated Successfully",
+    "startDate":"Start Date",
+    "endDate":"End Date",
+    "select":"Select",
+    "pending":"Waiting for data review",
+    "approved":"Waiting for payment process"
+  }
+  

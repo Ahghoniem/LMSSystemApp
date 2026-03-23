@@ -1,0 +1,16 @@
+{
+    "pageTitle": "تفاصيل التدريب",
+    "sessionName": "اسم الجلسة",
+    "startTime": "معاد البداية",
+    "endTime": "معاد النهاية",
+    "duration": "المدة",
+    "sessionLink": "رابط الجلسة",
+    "contentColumn": "المحتوى",
+    "materials": {
+        "title": "مواد الجلسة",
+        "empty": "لا توجد مواد لهذه الجلسة.",
+        "view": "عرض المحتوى",
+        "downloadAll": "تحميل الكل"
+    }
+}
+  

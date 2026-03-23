@@ -1,0 +1,11 @@
+{
+  "pageTitle": "Benefit Statement",
+  "columns": {
+    "name": "Name",
+    "nationalId": "National ID",
+    "date": "Date",
+    "packageName": "Package Name",
+    "actions": "Actions"
+  },
+  "download": "Download"
+}

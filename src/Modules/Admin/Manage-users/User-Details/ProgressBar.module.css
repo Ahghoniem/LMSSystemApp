@@ -1,0 +1,211 @@
+.progressBarContainer {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+}
+
+.progressBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stageWrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.stageWrapper:last-child {
+  flex: 0;
+}
+
+.stageItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.stageCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  border: 3px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #9ca3af;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.stageCircle.active {
+  background-color: #b38e19;
+  border-color: #b38e19;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(179, 142, 25, 0.3);
+}
+
+.stageCircle.current {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(179, 142, 25, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(179, 142, 25, 0.6);
+  }
+}
+
+.stageCircle i {
+  font-size: 20px;
+}
+
+.stageLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  text-align: center;
+  max-width: 120px;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+  font-family: "Cairo", sans-serif;
+}
+
+.stageLabel.activeLabel {
+  color: #0a2a4d;
+}
+
+.stageLine {
+  flex: 1;
+  height: 4px;
+  background-color: #e5e7eb;
+  margin: 0 10px;
+  position: relative;
+  top: -25px;
+  transition: background-color 0.3s ease;
+}
+
+.stageLine.activeLine {
+  background-color: #b38e19;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .stageCircle {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .stageLabel {
+    font-size: 13px;
+    max-width: 100px;
+  }
+
+  .stageLine {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .progressBarContainer {
+    padding: 20px 15px;
+  }
+
+  .progressBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .stageWrapper {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .stageWrapper:last-child {
+    flex: 1;
+  }
+
+  .stageItem {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .stageCircle {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .stageLabel {
+    text-align: right;
+    max-width: none;
+    font-size: 14px;
+  }
+
+  html[dir="ltr"] .stageLabel {
+    text-align: left;
+  }
+
+  .stageLine {
+    display: none;
+  }
+
+  /* Add vertical line for mobile */
+  .stageWrapper:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    width: 3px;
+    height: 30px;
+    background-color: #e5e7eb;
+    transition: background-color 0.3s ease;
+  }
+
+  html[dir="ltr"] .stageWrapper:not(:last-child)::after {
+    left: 20px;
+    right: auto;
+  }
+
+  .completedWrapper:not(:last-child)::after {
+    background-color: #b38e19;
+  }
+}
+
+@media (max-width: 480px) {
+  .stageCircle {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .stageCircle i {
+    font-size: 16px;
+  }
+
+  .stageLabel {
+    font-size: 12px;
+  }
+}
+

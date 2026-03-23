@@ -1,0 +1,20 @@
+{
+    "examName": "اسم الامتحان",
+    "date": "التاريخ",
+    "place": "المكان",
+    "status": "الحالة",
+    "numberOfSubscribers": "عدد المشتركين",
+    "examsManagement": "إدارة الامتحانات",
+    "opend": "مفتوح",
+    "closed": "مغلق",
+    "select": "اختر",
+    "events": {
+        "title": "اسم الامتحان",
+        "registrationStartDate": "تاريخ بدء التسجيل",
+        "registrationEndDate": "تاريخ انتهاء التسجيل",
+        "status": "الحالة",
+        "limit": "عدد العناصر"
+    }
+}
+
+

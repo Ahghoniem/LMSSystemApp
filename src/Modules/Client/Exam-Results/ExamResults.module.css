@@ -1,0 +1,276 @@
+.tableContainer {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px 20px 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.10);
+  overflow-x: auto;
+}
+
+.pageTitle {
+  font-size: 26px;
+  margin: 10px 0 18px;
+  font-weight: 800;
+  color: #0a2a4d;
+  text-align: center;
+}
+
+/* Summary card above table */
+.summaryCard {
+  position: relative;
+  margin-bottom: 24px;
+  padding: 24px 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease;
+}
+
+.summaryCard:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.summaryCardAccent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 14px 0 0 14px;
+}
+
+html[dir="rtl"] .summaryCardAccent {
+  left: auto;
+  right: 0;
+  border-radius: 0 14px 14px 0;
+}
+
+.summaryCardPassed .summaryCardAccent {
+  background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%);
+}
+
+.summaryCardFailed .summaryCardAccent {
+  background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+}
+
+.summaryCardPassed {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.06) 0%, rgba(22, 163, 74, 0.04) 100%);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.summaryCardFailed {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(220, 38, 38, 0.04) 100%);
+  border: 1px solid rgba(239, 68, 68, 0.18);
+}
+
+.summaryCardContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  padding-inline-start: 8px;
+}
+
+html[dir="rtl"] .summaryCardContent {
+  padding-inline-start: 0;
+  padding-inline-end: 8px;
+}
+
+.summaryIconWrapPassed,
+.summaryIconWrapFailed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+}
+
+.summaryIconWrapPassed {
+  background: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+}
+
+.summaryIconWrapFailed {
+  background: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+}
+
+.summaryCardBody {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.summaryLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.summaryStatusPassed {
+  font-size: 20px;
+  font-weight: 700;
+  color: #16a34a;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.summaryStatusFailed {
+  font-size: 20px;
+  font-weight: 700;
+  color: #dc2626;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.summaryDescription {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+  max-width: 420px;
+}
+
+.downloadCertificateBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.35);
+}
+
+.downloadCertificateBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4);
+}
+
+.downloadCertificateBtn:active {
+  transform: translateY(0);
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 80px;
+  min-height: 81vh;
+  transition: margin-right .4s ease;
+  -webkit-transition: margin-right .4s ease;
+  -moz-transition: margin-right .4s ease;
+  -ms-transition: margin-right .4s ease;
+  -o-transition: margin-right .4s ease;
+}
+
+.procedureButtons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.retakeButton {
+  padding: 8px 16px;
+  background: #B38E19;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.retakeButton:hover {
+  background: #8f7316;
+}
+
+.passed {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.failed {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+@media(min-width:778px){
+  html[dir="rtl"] .summaryCard,
+  html[dir="rtl"] .tableContainer {
+    margin-right: 70px;
+  }
+  html[dir="ltr"] .summaryCard,
+  html[dir="ltr"] .tableContainer {
+    margin-left: 70px;
+  }
+}
+
+@media(max-width: 767px) {
+  .summaryCard {
+    padding: 20px 20px 20px 24px;
+  }
+
+  html[dir="rtl"] .summaryCard {
+    padding: 20px 24px 20px 20px;
+  }
+
+  .summaryCardContent {
+    gap: 16px;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+
+  .summaryIconWrapPassed,
+  .summaryIconWrapFailed {
+    width: 48px;
+    height: 48px;
+  }
+
+  .summaryStatusPassed,
+  .summaryStatusFailed {
+    font-size: 18px;
+  }
+
+  .downloadCertificateBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .procedureButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .retakeButton {
+    width: 100%;
+  }
+}
+
+.downloadCertificateBtn:disabled{
+  background: #a0a0a0;
+  color: #f0f0f0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.retakeButton:disabled{
+  background: #a0a0a0;
+  color: #f0f0f0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

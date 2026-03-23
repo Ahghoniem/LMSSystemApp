@@ -1,0 +1,12 @@
+{
+    "pageTitle": "User Grades",
+    "table": {
+      "name": "Course Name",
+      "date": "Exam Date",
+      "status": "Status"
+    },
+    "status": {
+      "succeeded": "Passed",
+      "failed": "Failed"
+    }
+  }

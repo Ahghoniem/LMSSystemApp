@@ -1,0 +1,18 @@
+{
+    "pageTitle": "Manage Products",
+    "select": "Select",
+    "products": {
+        "englishName": "English Name",
+        "arabicName": "Arabic Name",
+        "allowedUsers": "Allowed Users",
+        "numberOfCourses": "Number of Courses",
+        "pricingForEgyptians": "Pricing for Egyptians",
+        "pricingForForeigners": "Pricing for Foreigners",
+        "limit": "Limit"
+    },
+    "diploma": "Postgraduate Researcher (Diploma)",
+    "masters": "Postgraduate Researcher (Masters)",
+    "Teachers": "Faculty Staff Promotion",
+    "PHD":"Postgraduate Researcher (PHD)"
+}
+

@@ -1,0 +1,25 @@
+{
+    "pageTitle": "لوحة تحكم ",
+    "coursesCount": "عدد الدورات",
+    "traineesCount": "عدد المتدربين",
+    "completedExams": "امتحانات مكتملة",
+    "todayPayments": "مدفوعات اليوم",
+    "resultsStats": "إحصائيات النتائج",
+    "successfulStudents": "عدد الطلاب الناجحين",
+    "failedStudents": "عدد الطلاب الراسبين",
+    "students": "طالب",
+    "growthUp": "+8% عن الأسبوع الماضي",
+    "growthDown": "-3% عن الأسبوع الماضي",
+  
+    "egyptianStudents": "الطلاب المصريين",
+    "foreignStudents": "الطلاب الوافدين",
+  
+    "saturday": "السبت",
+    "sunday": "الأحد",
+    "monday": "الإثنين",
+    "tuesday": "الثلاثاء",
+    "wednesday": "الأربعاء",
+    "thursday": "الخميس",
+    "friday": "الجمعة"
+  }
+  

@@ -1,0 +1,38 @@
+{
+    "productDetails": "تفاصيل المنتج",
+    "englishName": "الاسم الإنجليزي",
+    "arabicName": "الاسم العربي",
+    "allowedUsers": "المستخدمون المسموحون",
+    "numberOfCourses": "عدد الدورات",
+    "pricingForEgyptians": "السعر للمصريين",
+    "pricingForForeigners": "السعر للأجانب",
+    "currency": "العملة لغير المصريين",
+    "edit": "تعديل المنتج",
+    "saveChanges": "حفظ التعديلات",
+    "cancel": "إلغاء",
+    "delete": "حذف المنتج",
+    "saving": "جاري الحفظ...",
+    "deleting": "جاري الحذف...",
+    "updateSuccess": "تم تحديث المنتج بنجاح",
+    "updateError": "حدث خطأ أثناء التحديث",
+    "deleteConfirm": "هل أنت متأكد من حذف هذا المنتج؟",
+    "deleteSuccess": "تم حذف المنتج بنجاح",
+    "deleteError": "حدث خطأ أثناء الحذف",
+    "productNotFound": "المنتج غير موجود",
+    "backToList": "العودة للقائمة",
+    "selectCurrency": "اختر العملة",
+    "selectReceipt": "اختر الإيصال",
+    "receiptEgyptians": "ايصال المصريين",
+    "receiptForeigners": "ايصال الوافيدين",
+    "diploma": " باحث دراسات عليا (دبلومة)",
+    "masters": "باحث دراسات عليا (ماجيستير)",
+    "PHD":"باحث دراسات عليا (دكتوراه)",
+    "Teachers":"ترقية اعضاء هيئة التدريس",
+    "errors": {
+    "required": "هذا الحقل مطلوب",
+    "arabic_only": "الرجاء إدخال أحرف عربية فقط",
+    "english_only": "الرجاء إدخال أحرف إنجليزية فقط"
+  },
+  "popupMessage":"هل انت متأكد من انك تريد مسح هذا المنتج"
+}
+

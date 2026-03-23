@@ -1,0 +1,22 @@
+{
+    "pageTitle": "سجل المتدربين",
+    "table": {
+      "fullName": "الاسم الكامل",
+      "nationalId": "الرقم القومي",
+      "university": "الجامعة",
+      "college": "الكلية",
+      "department": "القسم",
+      "status": "الحالة",
+      "createdAt": "تاريخ التسجيل"
+    },
+    "approved":"قيد انتظار عملية الدفع",
+    "pending":"قيد انتظار مراجعة البينات",
+    "succeeded":"انتهى من اداء الدورة",
+    "reserved training":"تم حجز الدورة",
+    "reserved exam":"تم حجز الامتحان",
+    "startDate":"تاريخ البداية",
+    "endDate":"تاريخ النهاية",
+    "select":"اختر",
+    "limit":"عدد العناصر"
+  }
+  

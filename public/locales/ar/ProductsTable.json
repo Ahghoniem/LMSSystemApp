@@ -1,0 +1,18 @@
+{
+    "pageTitle": "إدارة المنتجات",
+    "select": "اختر",
+    "products": {
+        "englishName": "الاسم الإنجليزي",
+        "arabicName": "الاسم",
+        "allowedUsers": "المستخدمون المسموحون",
+        "numberOfCourses": "عدد الدورات",
+        "pricingForEgyptians": "السعر للمصريين",
+        "pricingForForeigners": "السعر للأجانب",
+        "limit": "عدد العناصر"
+    },
+    "diploma": " باحث دراسات عليا (دبلومة)",
+    "masters": "باحث دراسات عليا (ماجيستير)",
+    "PHD":"باحث دراسات عليا (دكتوراه)",
+    "Teachers":"ترقية اعضاء هيئة التدريس"
+}
+

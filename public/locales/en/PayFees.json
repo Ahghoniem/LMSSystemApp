@@ -1,0 +1,21 @@
+{
+  "pageTitle": "Pay Fees",
+  "columns": {
+    "subjectName": "Payment Name",
+    "amount": "Amount",
+    "status": "Status",
+    "actions": "Actions"
+  },
+  "button": {
+    "pay": "Pay"
+  },
+  "PENDING":"Pending",
+  "PAID":"Success",
+  "FAILED":"Failed",
+  "redirect":"Redirecting...",
+  "errors": {
+    "paymentFailedTitle": "Payment Failed",
+    "paymentFailedMessage": "We couldn’t process your payment at the moment. Please try again or contact support if the issue persists.",
+    "genericError": "An unexpected error occurred. Please try again later."
+  }
+}

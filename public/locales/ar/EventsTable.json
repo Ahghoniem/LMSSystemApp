@@ -1,0 +1,24 @@
+{
+  "eventName": "اسم الفاعلية",
+  "events": {
+    "title": "اسم الفعالية",
+    "type": "النوع",
+    "training": "تدريب",
+    "exam": "اختبار",
+    "registrationStartDate": "تاريخ بدء التسجيل",
+    "registrationEndDate": "تاريخ انتهاء التسجيل",
+    "capacity": "السعة",
+    "numberOfRegistered": "عدد المسجلين",
+    "status": "الحالة",
+    "limit": "عدد العناصر",
+    "userRegisteredTitle": "الفعاليات المسجلة",
+    "noRegisteredEvents": "أنت غير مسجل في أي فعاليات حتى الآن.",
+    "statusNotStarted": "لم تبدأ بعد",
+    "statusInProgress": "قيد التنفيذ",
+    "statusFinished": "منتهية",
+    "popupOtherCourses": "أسماء الكورسات",
+    "popupBack": "العوده"
+  },
+  "opend": "مفتوح",
+  "closed": "مغلق"
+}

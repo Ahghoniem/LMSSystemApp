@@ -1,0 +1,157 @@
+body {
+  font-family: "Cairo", Tahoma, sans-serif;
+}
+
+.systemDataPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  min-height: 92vh;
+  background: #f5f6f8;
+}
+
+.systemBox {
+  margin-top: 55px;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  text-align: right;
+  width: 100%;
+  max-width: 900px;
+  direction: rtl;
+}
+
+.systemHeader {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.systemHeader h1 {
+  font-weight: 800;
+  font-size: 26px;
+  color: #163a63;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 40px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #163a63;
+  margin-bottom: 6px;
+}
+
+.formGroup input {
+  font-size: 15px;
+  padding: 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  direction: rtl;
+  text-align: right;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.formGroup input:focus {
+  border-color: #163a63;
+  box-shadow: 0 0 0 4px rgba(22, 58, 99, 0.06);
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.btn {
+  grid-column: 1 / -1;
+  background: var(--gold, #b38e19);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--gold-600, #8f7316);
+}
+
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .systemBox {
+    padding: 20px;
+  }
+}
+
+@media(min-width:767px){
+  html[dir="rtl"] .systemBox {
+    margin-right: 70px;
+  }
+  html[dir="ltr"] .systemBox {
+    margin-left: 70px;
+  }
+}
+
+.btn:disabled {
+  background: #a0a0a0;
+  color: #f0f0f0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Skeleton Loader */
+.skeletonBlock {
+  position: relative;
+  overflow: hidden;
+  background-color: #e7ebf0;
+  border-radius: 6px;
+
+}
+
+.skeletonBlock::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100%;
+  }
+}

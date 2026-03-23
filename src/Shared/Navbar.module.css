@@ -1,0 +1,323 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Cairo',sans-serif;
+  background: #19355a;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+.navbarLeft {
+  display: flex;
+  transform: translateX(-200%);
+  align-items: center;
+  -webkit-transform: translateX(-200%);
+  -moz-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
+  -o-transform: translateX(-200%);
+}
+
+.navbarCenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.navbarMain {
+  position: absolute;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+
+.sidebarToggle {
+  background: none;
+  display: flex;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.desktopMenu {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.desktopMenu a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  opacity: 0.9;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.desktopMenu a:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  width: 100%;
+  background: #19355a;
+  max-height: 0;
+  opacity: 0;
+  transform: scaleY(0.95);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobileMenu a {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+}
+
+.mobileMenu a:hover {
+  background: #1f2937;
+}
+
+.open {
+  max-height: 300px;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+/* Flag button */
+.flag {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Container for flag + menu button */
+.mobileToggle {
+  display: flex;
+  align-items: start;
+  margin-top: 8px;
+  gap: 0.5rem;
+}
+
+/* Dropdown menu */
+.flagDropdown {
+  position: absolute;
+  top: 100%;
+  margin-top: 4px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  min-width: 120px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.dropdownItem img {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.dropdownItem:hover {
+  background: #f0f0f0;
+}
+
+/* Logout text button (desktop) */
+.logoutText {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  transition: background 0.3s;
+  border-radius: 8px;
+}
+
+.logoutText:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Logout text (mobile menu) */
+.logoutTextMobile {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.logoutTextMobile:hover {
+  background: #1f2937;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .desktopMenu {
+    display: flex;
+  }
+
+  .menuBtn {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: none;
+  }
+
+  .navbarLeft {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktopMenu {
+    display: none;
+  }
+
+
+  .navbarCenter {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px){
+  .navbarLeft{
+    transform: translateX(0px);
+}
+}
+@media(min-width : 767px){
+  html[dir="ltr"] .navbarLeft{
+    transform: translateX(60px);
+  }
+}
+html[dir="ltr"] .navbarMain{
+  transform: translateX(0px);
+}
+
+.notifIcon {
+  color: #333;
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.notifIcon:hover {
+  color: #007bff;
+}
+
+.badge {
+  position: absolute;
+  right: -2px;
+  background: #ff3b3b;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 2px 5px;
+  font-weight: bold;
+}
+.notifBell{background:none;border:none;color:#fff;cursor:pointer}
+.notifBell{position:relative;font-size:1.4rem ; margin-left: 10px;}
+.notifCount {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: var(--gold);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  animation: subtlePulse 1.8s infinite;
+  transform-origin: center;
+  -webkit-animation: subtlePulse 1.8s infinite;
+}
+
+@keyframes subtlePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+}
+
+@media(max-width:767px)
+{
+  html[dir="rtl"] .flagDropdown{
+    left: 70px;
+  }
+  html[dir="ltr"] .flagDropdown{
+    right: 70px;
+  }
+}

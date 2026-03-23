@@ -1,0 +1,8 @@
+{
+    "pageTitle": "Permissions Management",
+    "formTitle": "Manage Admins and Supervisors Permissions",
+    "formDescription": "Select the permissions you want to grant or revoke for all admins and supervisors.",
+    "selectGroup": "Select Group",
+    "unselectGroup": "Unselect Group"
+  }
+  

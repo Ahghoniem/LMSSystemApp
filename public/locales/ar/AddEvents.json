@@ -1,0 +1,58 @@
+{
+  "title": "إضافة حدث",
+  "fields": {
+    "eventLanguage": "لغة الحدث",
+    "eventType": "نوع الحدث",
+    "oneSupervisorTrainer": "مشرف/مدرب واحد للحدث كامل",
+    "relatedTo": "مرتبط بـ",
+    "startExamDate": "تاريخ اليوم الاول للامتحان",
+    "endExamDate": "تاريخ اليوم الثانى للامتحان",
+    "courseStartDate": "تاريخ بدء الدورة",
+    "courseEndDate": "تاريخ انتهاء الدورة",
+    "startDate": "تاريخ بدأ التسجيل",
+    "endDate": "تاريخ انتهاء التسجيل",
+    "capacity": "السعة",
+    "trainerName": "المدرب",
+    "supervisorName": "المشرف",
+    "examPlace": "مكان الامتحان",
+    "field": "الدورة",
+    "examName": "اسم الامتحان",
+    "firstExamName": "اسم الامتحان الأول",
+    "firstExamDate": "تاريخ الامتحان الأول"
+  },
+  "options": {
+    "select": "اختر",
+    "selectEventType": "اختر نوع الحدث",
+    "selectLanguage": "اختر اللغة",
+    "languageAr": "العربية",
+    "languageEn": "English",
+    "training": "تدريب",
+    "exam": "امتحان",
+    "module": "وحدة",
+    "package": "حزمة"
+  },
+  "courseSupervisor": "مشرف الامتحان",
+  "courseTrainer": "مدرب الدورة",
+  "buttons": {
+    "accept": "تأكيد",
+    "loading": "جاري التحميل..."
+  },
+  "errors": {
+    "required": "هذا الحقل مطلوب",
+    "startDateBeforeToday": "تاريخ البدء لا يمكن أن يكون قبل اليوم",
+    "endBeforeStart": "تاريخ الانتهاء يجب أن يكون بعد تاريخ البدء",
+    "examDateOutOfRange": "تاريخ الامتحان يجب أن يكون ضمن مدة الحدث",
+    "startBeforeEnd":"يجب ان يكون تاريخ باية الدورة بعد انتهاء التسجيل"
+  },
+  "success": {
+    "trainingAdded": "تم إضافة حدث التدريب بنجاح",
+    "examAdded": "تم إضافة حدث الامتحان بنجاح"
+  },
+  "eventName":"اسم الحدث باللغة العربية",
+  "eventNameEn":"اسم الحدث باللغة الانجليزية",
+  "type":"النوع المتاح لهذه الفاعلية",
+  "arabic_only": "الرجاء إدخال أحرف عربية فقط",
+  "english_only": "الرجاء إدخال أحرف إنجليزية فقط",
+  "examDate": "تاريخ الامتحان",
+  "selectedPackage": "الحزمة المختارة"
+}

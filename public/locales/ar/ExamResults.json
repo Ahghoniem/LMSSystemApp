@@ -1,0 +1,25 @@
+{
+    "pageTitle": "نتائج الامتحانات",
+    "summary": {
+        "overallStatus": "الحالة العامة",
+        "passedAll": "ناجح في جميع المواد",
+        "someFailed": "راسب في بعض المواد. أعد امتحان المواد الراسبة للحصول على الشهادة.",
+        "downloadCertificate": "تحميل الشهادة"
+    },
+    "table": {
+        "name": "اسم الامتحان",
+        "date": "التاريخ",
+        "status": "الحالة",
+        "procedure": "الإجراء"
+    },
+    "status": {
+        "succeeded": "ناجح",
+        "failed": "راسب",
+        "reserved":"قيد الانتظار",
+        "absent":"غائب"
+    },
+    "requestCertificate": "طلب إفادة",
+    "retakeExam": "إعادة امتحان",
+    "result":"الدرجة"
+}
+

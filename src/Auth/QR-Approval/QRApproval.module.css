@@ -1,0 +1,368 @@
+.page {
+  height: 100%;
+  
+  min-height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  position: relative;
+  flex: 1;
+  padding-top: 60px;
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.container {
+  
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.iconContainer {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.successIcon {
+  background: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+  width: 100px;
+  height: 100px;
+  animation: iconPulse 2s ease-in-out infinite 1.5s;
+}
+
+.circle {
+  stroke-dasharray: 251.2; /* 2 * π * 40 (radius) */
+  stroke-dashoffset: 251.2;
+  animation: drawCircle 1s ease-out forwards;
+}
+
+.checkmark {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: drawCheckmark 0.6s ease-out 1s forwards;
+}
+
+@keyframes drawCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawCheckmark {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes iconPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.5);
+  }
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #28a745;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.detailsCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.detailRow:last-child {
+  margin-bottom: 0;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+  color: #6c757d;
+  font-size: 18px;
+}
+
+.detailContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+html[dir="ltr"] .detailContent {
+  text-align: left;
+}
+
+.detailLabel {
+  font-size: 12px;
+  color: #6c757d;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detailValue {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 600;
+}
+
+.detailId {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.idLabel {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.idValue {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 700;
+}
+
+.message {
+  font-size: 18px;
+  color: #6c757d;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.actionButton {
+  background: #B38E19;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(179, 142, 25, 0.3);
+}
+
+.actionButton:hover {
+  background: #8f7316;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(179, 142, 25, 0.4);
+}
+
+.actionButton:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: 20px;
+  }
+
+  .container {
+    padding: 20px 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .iconContainer {
+    margin-bottom: 24px;
+  }
+
+  .successIcon {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin: 0 0 30px 0;
+  }
+
+  .detailsCard {
+    padding: 20px 16px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+  }
+
+  .detailRow {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 12px;
+  }
+
+  .detailRow:last-child {
+    margin-bottom: 0;
+  }
+
+  .detailItem {
+    width: 100%;
+    min-width: unset;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .detailId {
+    align-self: flex-start;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .iconWrapper {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .detailLabel {
+    font-size: 11px;
+  }
+
+  .detailValue {
+    font-size: 14px;
+  }
+
+  .idLabel {
+    font-size: 13px;
+  }
+
+  .idValue {
+    font-size: 15px;
+  }
+
+  .message {
+    font-size: 16px;
+    margin: 0 0 30px 0;
+    padding: 0 10px;
+  }
+
+  .actionButton {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding-top: 15px;
+    margin-top: 65px;
+  }
+
+  .container {
+    padding: 15px 12px;
+    margin-top: 15px;
+    margin-bottom: 80px;
+  }
+
+  .successIcon {
+    width: 70px;
+    height: 70px;
+    padding: 8px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin: 0 0 24px 0;
+  }
+
+  .detailsCard {
+    padding: 16px 12px;
+    margin-bottom: 20px;
+  }
+
+  .detailRow {
+    margin-bottom: 16px;
+  }
+
+  .iconWrapper {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .detailLabel {
+    font-size: 10px;
+  }
+
+  .detailValue {
+    font-size: 13px;
+  }
+
+  .message {
+    font-size: 14px;
+    margin: 0 0 24px 0;
+  }
+
+  .actionButton {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}
+

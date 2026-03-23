@@ -1,0 +1,31 @@
+{
+    "add_package": {
+      "pageTitle": "Add New Package",
+      "typeLabel": "Package Type",
+      "typePlaceholder": "Select type",
+      "typeOptions": {
+        "training": "Training",
+        "exam": "Exam"
+      },
+      "nameLabelArabic": "Package Name in arabic",
+      "namePlaceholderArabic": "Enter package name in arabic",
+      "nameLabelEnglish": "Package Name in english",
+      "namePlaceholderEnglish": "Enter package name in english",
+      "countLabel": "Number of Items",
+      "trainingLabel": "Training",
+      "examLabel": "Exam",
+      "itemPlaceholder": "Select",
+      "trainingItems": ["Training 1", "Training 2", "Workshop 3"],
+      "examItems": ["Level 1 Exam", "Level 2 Exam", "Final Test"],
+      "submitBtn": "Add",
+      "validationError": "Please fill all fields!",
+      "emptyItemError": "Please select all items!",
+      "successMessage": "Package added successfully!",
+      "addedDataTitle": "Added Data:"
+    },
+    "arabic_only": "Please enter Arabic letters only",
+    "english_only": "Please enter English letters only",
+    "select":"Select",
+    "type":"Type available for this package"
+  }
+  

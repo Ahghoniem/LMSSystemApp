@@ -1,0 +1,35 @@
+{
+  "titles": {
+    "addSessionForTraining": "Add Session to Training",
+    "addNewSession": "Add New Session"
+  },
+  "fields": {
+    "sessionName": "Session Name In Arabic",
+    "date": "Date",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "link": "Session Link",
+    "sessionNameEnglish": "Session Name In English"
+  },
+  "placeholders": {
+    "sessionName": "Enter session name in arabic",
+    "sessionNameEnglish": "Enter Session name in english"
+  },
+  "buttons": {
+    "back": "Back to Sessions",
+    "addSession": "Add Session",
+    "loading": "Adding..."
+  },
+  "errors": {
+    "required": "This field is required",
+    "pastDate": "Date cannot be in the past",
+    "requiredArabicName": "Arabic name is required.",
+    "arabicOnly": "Please enter only Arabic characters.",
+    "requiredEnglishName": "English name is required.",
+    "englishOnly": "Please enter only English letters."
+  },
+  "messages": {
+    "sessionAdded": "Session added successfully",
+    "errorAdding": "An error occurred while adding the session"
+  }
+}

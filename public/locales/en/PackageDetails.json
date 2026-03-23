@@ -1,0 +1,30 @@
+{
+    "packageDetails": "Package Details",
+    "englishName": "English Name",
+    "arabicName": "Arabic Name",
+    "elements": "Elements",
+    "numberOfElements": "Number of Elements",
+    "availableType": "Available Type",
+    "edit": "Edit Package",
+    "saveChanges": "Save Changes",
+    "cancel": "Cancel",
+    "delete": "Delete Package",
+    "saving": "Saving...",
+    "deleting": "Deleting...",
+    "updateSuccess": "Package updated successfully",
+    "updateError": "Error occurred while updating",
+    "deleteConfirm": "Are you sure you want to delete this package?",
+    "deleteSuccess": "Package deleted successfully",
+    "deleteError": "Error occurred while deleting",
+    "packageNotFound": "Package not found",
+    "backToList": "Back to List",
+    "item": "Item",
+    "select": "Select",
+    "errors": {
+        "required": "This field is required",
+        "arabic_only": "Please enter Arabic letters only",
+        "english_only": "Please enter English letters only"
+    },
+    "popupMessage": "Are you sure you want to delete this package"
+}
+

@@ -1,0 +1,196 @@
+/* ===== Base Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 100vh;
+  background-color: #19355a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: width 0.3s ease, transform 0.4s ease, opacity 0.4s ease;
+  z-index: 9999;
+  overflow-y: auto;
+  -webkit-transition: width 0.3s ease, transform 0.4s ease, opacity 0.4s ease;
+  -moz-transition: width 0.3s ease, transform 0.4s ease, opacity 0.4s ease;
+  -ms-transition: width 0.3s ease, transform 0.4s ease, opacity 0.4s ease;
+  -o-transition: width 0.3s ease, transform 0.4s ease, opacity 0.4s ease;
+}
+
+
+.sidebar.open {
+  width: 220px;
+  z-index: 10000; 
+}
+
+/* ===== Mobile View ===== */
+@media (max-width: 767px) {
+  .sidebar {
+    width: 220px;
+    transform: translateX(100%); 
+    opacity: 0;
+    pointer-events: none; /* Prevent clicks when hidden */
+    top: 0; 
+    height: 100vh; /* Full screen height */
+  }
+
+  .sidebar.open {
+    transform: translateX(0); /* Slide in */
+    opacity: 1; /* Fade in */
+    pointer-events: auto; /* Enable clicks */
+    z-index: 10000; /* appear above everything */
+  }
+}
+
+/* ===== Desktop View ===== */
+@media (min-width: 768px) {
+  .sidebar {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ===== Menu Styling ===== */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.menuClosed {
+  margin-top: 45px;
+}
+
+.menu li {
+  margin: 15px 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.icon {
+  font-size: 20px;
+  opacity: 1;
+}
+
+/* Sidebar Header */
+.sidebar_header {
+  padding: 0 7px;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  width: 100%;
+}
+
+.sidebar_header .welcome_text {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.sidebar_header .username {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hr {
+  width: 100%;
+  opacity: 0.5;
+  padding: 0;
+}
+html[dir="ltr"] .sidebar{
+  left: 0;
+}
+.head{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.close{
+  background: none;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  cursor: pointer;
+}
+html[dir="ltr"] .sidebar.open {
+    transform: translateX(0); opacity: 1; pointer-events: auto;
+    }
+@media(max-width : 767px)
+{
+  html[dir="ltr"] .sidebar{
+    transform: translateX(-100%);
+  }
+}
+
+@media(min-width : 767px)
+{
+  html[dir="ltr"] .icon{
+    margin-left: 10px;
+  }
+  html[dir="rtl"] .icon{
+    margin-right: 10px;
+  }
+}
+
+/* ===== Sidebar Skeleton ===== */
+
+.sidebarSkeleton {
+  width: 100%;
+  margin-top: 45px;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.skeletonItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.skeletonIcon {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: shimmer 1.5s infinite ease-in-out;
+}
+
+.skeletonText {
+  height: 14px;
+  width: 120px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: shimmer 1.5s infinite ease-in-out;
+}
+
+.sidebar:not(.open) .skeletonText {
+  display: none; /* Hide text when collapsed */
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.4; }
+}

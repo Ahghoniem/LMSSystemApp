@@ -1,0 +1,168 @@
+/* PutEmail.module.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  font-family: "Cairo", Tahoma, sans-serif;
+  background: #f5f6f8;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 92vh;
+}
+
+/* Main auth section */
+.auth {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 20px;
+}
+
+/* Email box card */
+.emailBox {
+  background: #fff;
+  padding: 22px 24px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  text-align: right;
+  width: fit-content;
+}
+
+/* Form group */
+.formGroup {
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #163a63;
+  font-weight: 600;
+    direction: inherit;
+  text-align: start;
+}
+
+.formGroup input {
+  font-size: 15px;
+  padding: 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  outline: none;
+  width: 320px;
+  direction: inherit;
+  text-align: start;
+}
+
+.formGroup input:focus {
+  border-color: #163a63;
+  box-shadow: 0 0 0 4px rgba(22, 58, 99, 0.06);
+}
+
+/* Button */
+.btn {
+  display: block;
+  margin-top: 10px;
+  background: #163a63;
+  color: #fff;
+  border: none;
+  padding: 12px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #0d2a49;
+}
+
+/* Verification header */
+.verificationHeader {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.verificationHeader h1 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #163a63;
+}
+
+.verificationSubtitle {
+  font-size: 14px;
+  color: #888;
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .formGroup input {
+    width: 100%;
+  }
+
+  .emailBox {
+    width: calc(100vw - 60px);
+    display: block;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1550px) {
+  .page {
+    min-height: 100vh;
+  }
+}
+.error{
+  color: red;
+  font-size: 14px;
+  text-align: left;
+}
+.btn:disabled {
+  background: #a0a0a0; /* Gray background */
+  color: #f0f0f0;      /* Lighter text */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.spinner {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #fff;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+  animation: spin 0.8s linear infinite;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.load{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+html[dir="rtl"] .error {
+  text-align: right;
+}

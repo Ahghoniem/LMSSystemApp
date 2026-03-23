@@ -1,0 +1,357 @@
+:root {
+  --font-family: "Cairo", sans-serif;
+  --dark-blue: #0a2a4d;
+  --gold: #b38e19;
+  --page-bg: #eef2f6;
+  --text: #0b1424;
+  --muted: #6b7280;
+  --white: #fff;
+  --card-border: #e7ebf0;
+  --shadow: 0 8px 18px rgba(3, 24, 46, 0.08);
+  --w-regular: 400;
+  --w-medium: 500;
+  --w-semibold: 600;
+  --w-bold: 700;
+}
+
+body {
+  font-family: "Cairo", Tahoma, sans-serif;
+}
+
+.addPermissionPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  min-height: 92vh;
+  background: #f5f6f8;
+}
+
+.permissionBox {
+  margin-top: 55px;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  text-align: right;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.permissionHeader {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.permissionHeader h1 {
+  font-weight: 800;
+  font-size: 26px;
+  color: #163a63;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 40px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #163a63;
+  margin-bottom: 6px;
+}
+
+.formGroup input,
+.formGroup select {
+  font-size: 15px;
+  padding: 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  border-color: #163a63;
+  box-shadow: 0 0 0 4px rgba(22, 58, 99, 0.06);
+}
+
+.btn {
+  grid-column: 1 / -1;
+  background: #163a63;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0d2a49;
+}
+
+.btn:disabled {
+  background: #a0a0a0;
+  color: #f0f0f0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.permissionsSection {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 2px solid #e7ebf0;
+  width: 100%;
+}
+
+.permissionsBox {
+  background: #f5f6f8;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #e7ebf0;
+  width: 100%;
+}
+
+.btnView {
+  background: #0a2a4d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-family: "Cairo", sans-serif;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.btnView:hover {
+  background: #143d73;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .boxTitleContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .btnView {
+    padding: 6px 12px;
+    font-size: 12px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .boxTitle {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .permissionsBox {
+    padding: 16px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.formSection {
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #163a63;
+  margin-bottom: 8px;
+}
+
+.sectionDesc {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.permissionsCard {
+  margin-top: 32px;
+  width: 100%;
+  align-self: stretch;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 18px rgba(3, 24, 46, 0.08);
+  padding: 24px 20px;
+}
+
+.permissionsTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #163a63;
+}
+
+.permissionsDesc {
+  color: #6b7280;
+  line-height: 1.9;
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.boxTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.boxTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #163a63;
+}
+
+.btnView {
+  background: #0a2a4d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-family: "Cairo", sans-serif;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.btnView:hover {
+  background: #143d73;
+  transform: translateY(-1px);
+}
+
+.permsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.permsGrid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Responsive grid for permissions */
+@media (max-width: 992px) {
+  .permsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .permsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.permItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #0b1424;
+  justify-content: flex-start;
+}
+
+.permItemSingle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #0b1424;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #b38e19;
+}
+
+.permLabel {
+  cursor: default;
+}
+
+@media (min-width: 767px) {
+  html[dir="rtl"] .addPermissionPage {
+    margin-right: 70px;
+  }
+  html[dir="ltr"] .addPermissionPage {
+    margin-left: 70px;
+  }
+}
+
+html[dir="rtl"] .permissionsSection {
+    text-align: right;
+}
+html[dir="ltr"] .permissionsSection {
+  text-align: left;
+}
+html[dir="rtl"] .permissionBox {
+    text-align: right;
+}
+html[dir="ltr"] .permissionBox {
+  text-align: left;
+}
+html[dir="rtl"] .formGroup input,.formGroup select {
+    text-align: right;
+}
+html[dir="ltr"] .formGroup input,.formGroup select {
+  text-align: left;
+}
+.error{
+  color: red;
+  font-size: 14px;
+}
+.btn:disabled {
+  background: #a0a0a0;
+  color: #f0f0f0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

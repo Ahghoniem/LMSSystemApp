@@ -1,0 +1,35 @@
+{
+  "titles": {
+    "addSessionForTraining": "إضافة جلسة للتدريب",
+    "addNewSession": "إضافة جلسة جديدة"
+  },
+  "fields": {
+    "sessionName": "اسم الجلسة باللغة العربية",
+    "date": "التاريخ",
+    "startTime": "وقت البداية",
+    "endTime": "وقت النهاية",
+    "link": "رابط الجلسة",
+    "sessionNameEnglish": "اسم الجلسة باللغة الانجليزية"
+  },
+  "placeholders": {
+    "sessionName": "أدخل اسم الجلسة باللغة العربية",
+    "sessionNameEnglish": "أدخل اسم الجلسة باللغة الانجليزية"
+  },
+  "buttons": {
+    "back": "العودة للجلسات",
+    "addSession": "إضافة الجلسة",
+    "loading": "جاري الإضافة..."
+  },
+  "errors": {
+    "required": "هذا الحقل مطلوب",
+    "pastDate": "التاريخ يجب أن لا يكون في الماضي",
+    "requiredArabicName": "الاسم بالعربية مطلوب.",
+    "arabicOnly": "الرجاء إدخال الأحرف العربية فقط.",
+    "requiredEnglishName": "الاسم بالإنجليزية مطلوب.",
+    "englishOnly": "الرجاء إدخال الأحرف الإنجليزية فقط."
+  },
+  "messages": {
+    "sessionAdded": "تم إضافة الجلسة بنجاح",
+    "errorAdding": "حدث خطأ أثناء إضافة الجلسة"
+  }
+}

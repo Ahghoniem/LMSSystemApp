@@ -1,0 +1,173 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px;
+  height: 92vh;
+  background: #f7f9fc;
+}
+
+.otpBox {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  margin-top: 5%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+}
+.icon img {
+  width: 64px;
+  margin-bottom: 20px;
+  filter: invert(22%) sepia(96%) saturate(1422%) hue-rotate(200deg)
+    brightness(92%) contrast(90%);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d2c54;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.otpInputs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  direction: ltr
+}
+
+.otpInputs input {
+  width: 48px;
+  height: 55px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  direction: ltr;
+  border: 2px solid #163a63;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.otpInputs input:focus {
+  border-color: #0d2c54;
+  box-shadow: 0 0 6px rgba(13, 44, 84, 0.4);
+  transform: scale(1.05);
+}
+
+.resend {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.grey {
+  color: #777;
+}
+
+.resend a {
+  color: #0d2c54;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.resend a:hover {
+  text-decoration: underline;
+}
+
+.timer {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #0d2c54;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.cancel,
+.verify {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.cancel {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #444;
+}
+
+.cancel:hover {
+  background: #f2f2f2;
+}
+
+.verify {
+  background: #0d2c54;
+  color: #fff;
+  border: none;
+}
+
+.verify:hover {
+  background: #002855;
+}
+
+@media (max-width: 480px) {
+  .otpInputs {
+    gap: 8px;
+  }
+  .otpInputs input {
+    width: 40px;
+    height: 48px;
+    font-size: 18px;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.load{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.verify:disabled {
+  background: #a0a0a0; 
+  color: #f0f0f0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

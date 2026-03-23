@@ -1,0 +1,27 @@
+{
+  "pageTitle": "طلابات الافادات",
+  "downloadAll": "تحميل الكل",
+  "download": "تحميل",
+  "columns": {
+    "name": "الاسم",
+    "nationalId": "الرقم القومي",
+    "date": "التاريخ",
+    "packageName": "نوع المتدرب",
+    "actions": "اجراءات"
+  },
+  "filters": {
+    "limit": "عدد العرض",
+    "select": "اختر",
+    "searchByName": "بحث بالاسم",
+    "searchByNationalId": "بحث بالرقم القومي",
+    "searchByDate": "بحث بالتاريخ",
+    "searchByPackage": "بحث بنوع المتدرب"
+  },
+  "downloadFile": {
+    "blockTitle": "افادة"
+  },
+    "diploma": " باحث دراسات عليا (دبلومة)",
+    "masters": "باحث دراسات عليا (ماجيستير)",
+    "PHD":"باحث دراسات عليا (دكتوراه)",
+    "Teachers":"ترقية اعضاء هيئة التدريس"
+}

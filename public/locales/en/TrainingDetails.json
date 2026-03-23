@@ -1,0 +1,16 @@
+{
+    "pageTitle": "Training Details",
+    "sessionName": "Session Name",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "duration": "Duration",
+    "sessionLink": "Session Link",
+    "contentColumn": "Content",
+    "materials": {
+        "title": "Session Materials",
+        "empty": "No materials for this session.",
+        "view": "View content",
+        "downloadAll": "Download all"
+    }
+}
+  

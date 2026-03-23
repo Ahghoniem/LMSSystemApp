@@ -1,0 +1,10 @@
+{
+    "title": "Attendance has been registered successfully",
+    "student": "Student",
+    "id": "ID",
+    "course": "Course",
+    "recordedAt": "Recorded At",
+    "successMessage": "Your Attendance code has been successfully approved and recorded.",
+    "backButton": "Back to Home"
+}
+

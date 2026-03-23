@@ -1,0 +1,15 @@
+{
+    "title": "المتدربين",
+    "table": {
+        "fullName": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "phoneNumber": "رقم الهاتف",
+        "college": "الكلية"
+    },
+    "common": {
+      "notAvailable": "-"
+    },
+    "select": "اختر",
+    "limit": "عدد العناصر"
+  }
+  

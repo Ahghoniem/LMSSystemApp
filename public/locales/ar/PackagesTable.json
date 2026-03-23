@@ -1,0 +1,12 @@
+{
+    "pageTitle": "إدارة الحزم",
+    "select": "اختر",
+    "packages": {
+        "name": "الاسم",
+        "elements": "العناصر",
+        "numberOfElements": "عدد العناصر",
+        "availableType": "النوع المتاح",
+        "limit": "عدد العناصر"
+    }
+}
+

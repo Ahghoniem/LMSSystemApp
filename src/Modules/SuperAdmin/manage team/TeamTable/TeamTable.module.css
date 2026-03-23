@@ -1,0 +1,110 @@
+:root{
+  --font-family: "Cairo", sans-serif;
+  --dark-blue:#0a2a4d;
+  --gold:#b38e19;
+  --page-bg:#eef2f6;
+  --text:#0b1424;
+  --muted:#6b7280;
+  --white:#fff;
+  --card-border:#e7ebf0;
+  --shadow:0 8px 18px rgba(3,24,46,.08);
+  --w-regular:400; 
+  --w-medium:500; 
+  --w-semibold:600;
+  --w-bold:700;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 80px;
+  min-height: 81vh;
+  transition: margin-right .4s ease;
+  -webkit-transition: margin-right .4s ease;
+  -moz-transition: margin-right .4s ease;
+  -ms-transition: margin-right .4s ease;
+  -o-transition: margin-right .4s ease;
+}
+
+.headerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: clamp(16px, 2vw, 24px);
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pageTitle {
+  font-size: 26px;
+  margin: 10px 0 18px;
+  font-weight: 800;
+  color: #0a2a4d;
+  text-align: center;
+}
+
+.tableContainer {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px 20px 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.10);
+  overflow-x: auto;
+}
+
+.addMemberBtn {
+  background-color: #917414;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.addMemberBtn:hover {
+  background-color: #ac8b1f;
+}
+
+.btnAction {
+  padding: 10px 20px;
+  background: #B38E19;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .25s;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.btnAction:hover {
+  background: #8f7316;
+}
+
+@media(min-width:767px){
+  html[dir="rtl"] .tableContainer {
+    margin-right: 70px;
+  }
+  html[dir="ltr"] .tableContainer {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerSection {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pageTitle {
+    text-align: center;
+  }
+
+  .addMemberBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

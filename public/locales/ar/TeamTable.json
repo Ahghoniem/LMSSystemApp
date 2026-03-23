@@ -1,0 +1,21 @@
+{
+  "pageTitleTrain": "إدارة المدربين",
+  "pageTitleSuper": "إدارة المشرفين",
+  "pageTitleAdmin": "إدارة المسؤولين",
+  "addMember": "إضافة عضو",
+  "limit": "عدد النتائج",
+  "select": "اختر",
+  "searchPlaceholder": "ابحث...",
+  "startDate": "تاريخ البداية",
+  "endDate": "تاريخ النهاية",
+  "table": {
+    "fullName": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "status": "الحالة"
+  },
+  "status": {
+    "active": "نشط",
+    "inactive": "غير نشط"
+  }
+}
+

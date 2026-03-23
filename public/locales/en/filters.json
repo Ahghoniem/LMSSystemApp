@@ -1,0 +1,17 @@
+{
+    "refresh": "Refresh",
+    "itemsCount": "Items Count",
+    "searchType": "Search Type",
+    "all": "All",
+    "name": "Name",
+    "dateFormat": "Date (yyyy-mm-dd)",
+    "search": "Search",
+    "searchPlaceholder": "Search here...",
+    "clearSearch": "Clear Search",
+    "university": "University",
+    "select": "Select",
+    "employeeName": "Employee Name (Select University First)",
+    "pending":"Waiting for data review",
+    "approved":"Waiting for payment process"
+  }
+  

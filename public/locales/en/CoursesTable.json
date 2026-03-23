@@ -1,0 +1,17 @@
+{
+  "courseId": "Course ID",
+  "courseNameEn": "Course Name",
+  "courseNameAr": "Course Name (Arabic)",
+  "actions": "Actions",
+  "viewCourse": "View Course",
+  "addCourse": "Add Course",
+  "coursesManagement": "Courses Management",
+  "searchByName": "Search by Name",
+  "searchPlaceholder": "Search for a course...",
+  "limit": "Items Count",
+  "select": "Select",
+  "errorLoading": "Error loading data",
+  "pricingForEgyptians": "Pricing for Egyptians",
+  "pricingForForeigners": "Pricing for Foreigners",
+  "courseTitle":"Course Title"
+}

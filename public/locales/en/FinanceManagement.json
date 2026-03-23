@@ -1,0 +1,18 @@
+{
+  "pageTitle": "Finance Management",
+  "select": "Select",
+  "limit": "Limit",
+  "columns": {
+    "name": "Name",
+    "subjectName": "Payment Name",
+    "nationalId": "National ID",
+    "date": "Date",
+    "status": "Status",
+    "actualAmount":"Paid Amount",
+    "amount":"Required Amount"
+  },
+  "PENDING":"Pending",
+  "SUCCESS":"Success",
+  "FAILED":"Failed"
+}
+

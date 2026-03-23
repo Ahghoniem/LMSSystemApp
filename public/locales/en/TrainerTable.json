@@ -1,0 +1,23 @@
+{
+  "trainingName": "Training Name",
+  "startDate": "Course Start Date",
+  "endDate": "Course End Date",
+  "capacity": "Capacity",
+  "registeredCount": "Registered Count",
+  "status": "Status",
+  "trainingsManagement": "Trainings Management",
+  "opend": "Open",
+  "closed": "Closed",
+
+  "events": {
+    "title": "Training Name",
+    "training": "Training",
+    "registrationStartDate": "Registration Start Date",
+    "registrationEndDate": "Registration End Date",
+    "status": "Status",
+    "limit": "Number of Items"
+  },
+  "actions": "Actions",
+  "sessions": "Sessions",
+  "users": "Trainees"
+}

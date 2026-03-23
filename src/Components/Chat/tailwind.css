@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+*{
+    padding: revert-layer;
+    margin: revert-layer;
+}
+.chattingInput{
+    border-radius: revert-layer;
+    padding:revert-layer;
+    border: revert-layer;
+    -webkit-border-radius: revert-layer;
+    -moz-border-radius: revert-layer;
+    -ms-border-radius: revert-layer;
+    -o-border-radius: revert-layer;
+}
+.voiceMessageInput{
+    border-radius: revert-layer;
+    padding:revert-layer;
+    border: revert-layer;
+    -webkit-border-radius: revert-layer;
+    -moz-border-radius: revert-layer;
+    -ms-border-radius: revert-layer;
+    -o-border-radius: revert-layer;
+}
+@media(min-width:767px){
+    html[dir="rtl"] .test {
+      margin-right: 70px;
+    }
+    html[dir="ltr"] .test {
+      margin-left: 70px;
+    }
+  }
+
+
+    html[dir="rtl"] .btn {
+      left: 1.5rem;
+    }
+    html[dir="ltr"] .btn {
+      right: 1.5rem;
+    }
+
+
+
+    html[dir="rtl"] .msgMargin {
+      margin-right: 0.5rem;
+    }
+    html[dir="ltr"] .msgMargin {
+      margin-left: 0.5rem;
+    }
+
+
+    html[dir="rtl"] .msgStatusMargin {
+      margin-right: 0.25rem;
+    }
+    html[dir="ltr"] .msgStatusMargin {
+      margin-left: 0.25rem;
+    }
+
+
+    html[dir="rtl"] .statusMargin {
+      margin-right: -0.25rem;
+    }
+    html[dir="ltr"] .statusMargin {
+      margin-left: -0.25rem;
+    }
+
+
+    html[dir="rtl"] .lastMessageMargin {
+      margin-right: 0.25rem;
+    }
+    html[dir="ltr"] .lastMessageMargin {
+      margin-left: 0.25rem;
+    }
+
+    .MessageLength{
+      word-break: break-word;
+    }
+
+    /* VoiceMessage.css */
+
+.voiceNote{
+  height: -webkit-fill-available;
+  justify-content: center;
+}
+
+
+

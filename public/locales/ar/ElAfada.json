@@ -1,0 +1,11 @@
+{
+  "pageTitle": "طلابات الافادات",
+  "columns": {
+    "name": "الاسم",
+    "nationalId": "الرقم القومي",
+    "date": "التاريخ",
+    "packageName": "اسم الحزمه",
+    "actions": "اجراءات"
+  },
+  "download": "تحميل"
+}

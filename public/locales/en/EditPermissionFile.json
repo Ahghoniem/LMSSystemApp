@@ -1,0 +1,25 @@
+{
+    "editPermissionFile": "Edit Permission File",
+    "permissionFileInfo": "Permission File Information",
+    "fillPermissionFileDetails": "Fill in the details of the permission file, including name in Arabic and English.",
+    "nameAr": "Name (Arabic)",
+    "enterNameAr": "Enter name in Arabic",
+    "nameEn": "Name (English)",
+    "enterNameEn": "Enter name in English",
+    "reselectPermissions": "Reselect Permissions",
+    "choosePermissions": "Select the permissions to be granted to this file.",
+    "selectGroup": "Select Group",
+    "unselectGroup": "Unselect Group",
+    "updatePermissionFile": "Update Permission File",
+    "deletePermissionFile": "Delete Permission File",
+    "requiredArabicName": "Arabic name is required.",
+    "arabicOnly": "Please enter only Arabic characters.",
+    "requiredEnglishName": "English name is required.",
+    "englishOnly": "Please enter only English letters.",
+    "selectAtLeastOnePermission": "Please select at least one permission.",
+    "sucess":"The perimssion file has been updated successfully",
+    "popupMessage":"Are you sure you want to delete this file",
+    "selectAllPermissions": "Select all permissions",
+    "unselectAllPermissions": "Unselect all permissions"
+  }
+  

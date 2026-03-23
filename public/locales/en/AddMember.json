@@ -1,0 +1,52 @@
+{
+  "titles": {
+    "addNewMemberTrain": "Add New Trainer",
+    "addNewMemberSuper": "Add New Supervisor",
+    "addNewMemberAdmin": "Add New Admin"
+  },
+  "fields": {
+    "nameAr": "Arabic Name",
+    "nameEn": "English Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "permissionFile": "Permission File"
+  },
+  "placeholders": {
+    "nameAr": "Enter Arabic Name",
+    "nameEn": "Enter English Name",
+    "email": "Enter Email",
+    "password": "Enter Password",
+    "confirmPassword": "Confirm Password",
+    "selectPermissionFile": "Select Permission File",
+    "loading": "Loading..."
+  },
+  "buttons": {
+    "addMember": "Add Member",
+    "updateMember": "Update Member",
+    "loading": "Loading..."
+  },
+  "errors": {
+    "required": "This field is required",
+    "english_only": "English letters only",
+    "arabic_only": "Arabic letters only",
+    "emailInvalid": "Invalid email format",
+    "passwordLen": "Password must be at least 8 characters",
+    "passwordUpper": "Password must contain at least one uppercase letter",
+    "passwordSpecial": "Password must contain at least one special character",
+    "passwordMismatch": "Passwords do not match",
+    "selectAtLeastOnePermission": "Select at least one permission"
+  },
+  "messages": {
+    "memberAdded": "Member added successfully",
+    "errorAdding": "Error adding member"
+  },
+  "permissionsSection": {
+    "title": "Assign Permissions",
+    "desc": "Select the permissions to grant this user",
+    "selectGroup": "Select Group",
+    "unselectGroup": "Unselect Group",
+    "selectAllPermissions": "Select All Permissions",
+    "unselectAllPermissions": "Unselect All Permissions"
+  }
+}

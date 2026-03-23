@@ -1,0 +1,139 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlayHidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .overlayVisible {
+    opacity: 1;
+  }
+  
+  .popup {
+    position: relative;
+    background-color: #fff;
+    border-radius: 1rem; 
+    max-width: 415px;
+    min-width: 20rem; 
+    width: fit-content;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transform: scale(0.95);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .popupVisible {
+    transform: scale(1.05) translateY(-0.5rem);
+    opacity: 1;
+    animation: bounceIn 0.5s ease forwards;
+    -webkit-animation: bounceIn 0.5s ease forwards;
+}
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.8) translateY(-20px);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.05) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
+  }
+  
+  .iconWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .message {
+    color: #374151; 
+  }
+  
+  .iconSuccess {
+    color: #22c55e; 
+  }
+  
+  .iconError {
+    color: #ef4444; 
+}
+.iconWarning {
+    color: #eab308; 
+}
+
+.iconInfo {
+    color: #3b82f6; 
+}
+.closeButton {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    color: #9ca3af; 
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+.closeButton:hover {
+    color: #4b5563; 
+}
+.btn {
+  display: block;
+  margin-top: 10px;
+  background: #163a63;
+  color: #fff;
+  border: none;
+  padding: 12px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0d2a49;
+}
+.actions{
+  display: flex;
+  gap: 15px;
+}
+.btnCancel{
+  display: block;
+  margin-top: 10px;
+  background-color: #6B7280;
+  color: #fff;
+  border: none;
+  padding: 12px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.btnCancel:hover{
+  background-color: #D1D5DB;
+}
+
+.btn:disabled {
+  background: #a0a0a0;
+  color: #f0f0f0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

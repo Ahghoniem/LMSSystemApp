@@ -1,0 +1,42 @@
+{
+  "title": "Course Details",
+  "fields": {
+    "courseId": "Course ID",
+    "courseNameEn": "Course Name (English)",
+    "courseNameAr": "Course Name (Arabic)",
+    "title": "Title",
+    "priceForEgypt": "Price for Egypt",
+    "priceForForigner": "Price for Foreigner",
+    "currency": "Currency"
+  },
+  "placeholders": {
+    "courseNameEn": "Enter course name in English",
+    "courseNameAr": "Enter course name in Arabic",
+    "title": "Enter course title",
+    "priceForEgypt": "Enter price for Egypt",
+    "priceForForigner": "Enter price for foreigner"
+  },
+  "options": {
+    "selectCurrency": "Select currency"
+  },
+  "buttons": {
+    "edit": "Edit",
+    "save": "Save Changes",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "delete":"Delete"
+  },
+  "errors": {
+    "required": "This field is required",
+    "arabic_only": "Please enter Arabic letters only",
+    "english_only": "Please enter English letters only",
+    "invalidNumber": "Please enter a valid positive number"
+  },
+  "messages": {
+    "courseUpdated": "Course updated successfully",
+    "updateError": "Error updating course",
+    "DeleteError":"Error deleting course",
+    "courseDeleted":"Course deleted successfully"
+  }
+}
+

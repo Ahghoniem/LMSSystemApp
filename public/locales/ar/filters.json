@@ -1,0 +1,17 @@
+{
+    "refresh": "تحديث",
+    "itemsCount": "عدد العناصر",
+    "searchType": "نوع البحث",
+    "all": "الكل",
+    "name": "الاسم",
+    "dateFormat": "التاريخ (yyyy-mm-dd)",
+    "search": "بحث",
+    "searchPlaceholder": "ابحث هنا...",
+    "clearSearch": "مسح البحث",
+    "university": "الجامعة",
+    "select": "اختر",
+    "employeeName": "اسم الموظف (اختر الجامعة أولاً)",
+    "approved":"قيد انتظار عملية الدفع",
+    "pending":"قيد انتظار مراجعة البينات"
+  }
+  

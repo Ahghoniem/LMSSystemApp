@@ -1,0 +1,150 @@
+.dropdown {
+  width: 100%;
+  list-style: none;
+}
+
+.dropdownHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+  border-radius: 8px;
+}
+
+.dropdownHeader:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.labelContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.dropdownList {
+  list-style: none;
+  padding-left: 15px;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scaleY(0.9);
+  transform-origin: top;
+  height: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    height 0.3s ease;
+}
+
+.dropdownList.open {
+  opacity: 1;
+  transform: scaleY(1);
+  height: auto;
+}
+
+.groupItem {
+  list-style: none;
+  margin: 4px 0;
+}
+
+.groupHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.95);
+  padding: 8px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  text-align: inherit;
+}
+
+.groupHeader:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.groupIcon {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.groupChevron {
+  margin-left: auto;
+  opacity: 0.8;
+}
+
+.nestedList {
+  list-style: none;
+  padding-left: 20px;
+  margin: 2px 0 6px 0;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 0.25s ease, opacity 0.25s ease;
+}
+
+.nestedList.nestedOpen {
+  height: auto;
+  opacity: 1;
+}
+
+.dropdownItem {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  font-size: 13px;
+  gap: 8px;
+}
+
+.dropdownItem:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.subIcon {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* RTL */
+html[dir="rtl"] .dropdownList {
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+html[dir="rtl"] .nestedList {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+html[dir="rtl"] .groupChevron {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+@media (min-width: 767px) {
+  html[dir="ltr"] .icon {
+    margin-left: 10px;
+  }
+  html[dir="rtl"] .icon {
+    margin-right: 10px;
+  }
+}

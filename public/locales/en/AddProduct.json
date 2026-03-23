@@ -1,0 +1,40 @@
+{
+    "title": "Add Product",
+    "fields": {
+        "englishName": "English Name",
+        "arabicName": "Arabic Name",
+        "allowedUsers": "Allowed Users",
+        "numberOfCourses": "Number of Courses",
+        "numberOfCoursesPlaceholder": "Enter number of courses",
+        "pricingForEgyptians": "Pricing for Egyptians",
+        "pricingForEgyptiansPlaceholder": "Enter price for Egyptians",
+        "pricingForForeigners": "Pricing for Foreigners",
+        "currency":"Currency For Foreigners",
+        "pricingForForeignersPlaceholder": "Enter price for Foreigners",
+        "receiptEgyptians": "Receipt (Egyptians)",
+        "receiptForeigners": "Receipt (Foreigners)"
+    },
+    "options": {
+        "select": "Select",
+        "selectCurrency": "Select currency",
+        "selectReceipt": "Select receipt"
+    },
+    "buttons": {
+        "accept": "Submit",
+        "loading": "Loading..."
+    },
+    "errors": {
+        "required": "This field is required",
+        "invalidNumber": "Please enter a valid positive number",
+        "submitFailed": "Failed to add product",
+        "arabic_only": "Please enter Arabic letters only",
+        "english_only": "Please enter English letters only"
+    },
+    "success": {
+        "productAdded": "Product added successfully"
+    },
+    "diploma": "Postgraduate Researcher (Diploma)",
+    "masters": "Postgraduate Researcher (Masters)",
+    "Teachers": "Faculty Staff Promotion",
+    "PHD":"Postgraduate Researcher (PHD)"
+}

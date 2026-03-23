@@ -1,0 +1,79 @@
+.pager {
+    margin-top:18px;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+  }
+  .pagerActions {
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .pagerInfo {
+    color: #0a2a4d;
+    font-weight:800;
+    font-size:14px;
+  }
+  .pagerActions button {
+    border:none;
+    padding:10px 16px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:800;
+    transition:.25s;
+    font-size:14px;
+    min-height:44px;
+  }
+  .btnFirst { background:#e5e7eb; color:#374151; }
+  .btnPrev { background:#9ca3af; color:#fff; }
+  .btnNext { background:#B38E19; color:#fff; }
+  .pagerActions button:hover { filter:brightness(1.05); }
+  .pagerActions button:disabled { opacity:.6; cursor:not-allowed; }
+  
+  /* MOBILE */
+  @media (max-width:640px){
+    .pager {
+      margin-top:16px;
+    }
+    .pagerActions {
+      display:grid;
+      gap:10px;
+      width:100%;
+    }
+    .btnFirst { display:none; }
+    .btnPrev, .btnNext {
+      width:100%;
+      padding:12px 0;
+      font-size:15px;
+      border-radius:12px;
+    }
+    .pagerInfo {
+      grid-column:1 / -1;
+      order:3;
+      justify-self:center;
+      font-size:13px;
+    }
+  }
+  .pageSizeSelect {
+    border: none;
+    padding: 8px 10px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 14px;
+    background: #e5e7eb;
+    color: #374151;
+    cursor: pointer;
+    width: auto;
+    min-width: 60px;
+    height: 44px;
+    text-align: center;
+  }
+  
+  .pageSizeSelect:focus {
+    outline: none;
+  }
+  
+  .pageSizeSelect:hover {
+    filter: brightness(1.05);
+  }

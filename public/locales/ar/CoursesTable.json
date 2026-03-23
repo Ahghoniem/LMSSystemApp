@@ -1,0 +1,17 @@
+{
+  "courseId": "رقم الكورس",
+  "courseNameEn": "اسم الكورس ",
+  "courseNameAr": "اسم الكورس بالعربية",
+  "actions": "الإجراءات",
+  "viewCourse": "عرض الكورس",
+  "addCourse": "إضافة كورس",
+  "coursesManagement": "إدارة الكورسات",
+  "searchByName": "البحث بالاسم",
+  "searchPlaceholder": "ابحث عن كورس...",
+  "limit": "عدد العناصر",
+  "select": "اختر",
+  "errorLoading": "حدث خطأ في تحميل البيانات",
+  "pricingForEgyptians": "السعر للمصريين",
+  "pricingForForeigners": "السعر للأجانب",
+  "courseTitle":"عنوان الكورس"
+}

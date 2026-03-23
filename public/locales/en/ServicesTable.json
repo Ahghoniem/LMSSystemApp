@@ -1,0 +1,14 @@
+{
+  "pageTitle": "Manage Services",
+  "pageTitle2": "Manage Receipts",
+  "select": "Select",
+  "services": {
+    "englishName": "English Name",
+    "arabicName": "Arabic Name",
+    "pricingForEgyptians": "Pricing for Egyptians",
+    "pricingForForeigners": "Pricing for Foreigners",
+    "limit": "Limit",
+    "totalAmount":"Total Amount",
+    "currency":"Currency"
+  }
+}

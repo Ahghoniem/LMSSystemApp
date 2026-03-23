@@ -1,0 +1,40 @@
+{
+  "titles": {
+    "addNewCourse": "Add New Course"
+  },
+  "fields": {
+    "courseNameEn": "Course Name (English)",
+    "courseNameAr": "Course Name (Arabic)",
+    "title": "Title",
+    "priceForEgypt": "Price for Egypt",
+    "priceForForigner": "Price for Foreigner",
+    "currency": "Currency"
+  },
+  "placeholders": {
+    "courseNameEn": "Enter course name in English",
+    "courseNameAr": "Enter course name in Arabic",
+    "title": "Enter course title",
+    "priceForEgypt": "Enter price for Egypt",
+    "priceForForigner": "Enter price for foreigner",
+    "currency": "Enter currency (e.g. EGP, USD)"
+  },
+  "options": {
+    "selectCurrency": "Select currency"
+  },
+  "buttons": {
+    "back": "Back",
+    "addCourse": "Add Course",
+    "loading": "Adding..."
+  },
+  "errors": {
+    "required": "This field is required",
+    "arabic_only": "Please enter Arabic letters only",
+    "english_only": "Please enter English letters only",
+    "invalidNumber": "Please enter a valid positive number"
+  },
+  "messages": {
+    "courseAdded": "Course added successfully",
+    "errorAdding": "Error adding course"
+  }
+}
+

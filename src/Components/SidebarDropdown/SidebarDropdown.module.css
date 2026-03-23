@@ -1,0 +1,110 @@
+.dropdown {
+    width: 100%;
+    list-style: none;
+  }
+  
+  /* Header button */
+  .dropdownHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.25s ease;
+    border-radius: 8px;
+  }
+  
+.dropdownHeader:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.labelContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+  
+  /* ==== SMOOTH DROPDOWN TRANSITION ==== */
+  .dropdownList {
+    list-style: none;
+    padding-left: 15px;
+    margin: 5px 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scaleY(0.9);
+    transform-origin: top;
+    height: 0;
+    transition:
+      opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+      height 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  
+  .dropdownList.open {
+    opacity: 1;
+    transform: scaleY(1);
+    height: auto;
+  }
+  
+  /* ==== Dropdown Items ==== */
+  .dropdownItem {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    font-size: 14px;
+    gap: 8px;
+  }
+  
+  .dropdownItem:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .subIcon {
+    font-size: 18px;
+  }
+  
+  /* ==== Staggered Fade Animation ==== */
+  .dropdownList.open li {
+    animation: fadeSlideIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(var(--i) * 0.07s);
+    opacity: 0;
+  }
+  
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ==== RTL Support ==== */
+  html[dir="rtl"] .dropdownList {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  @media(min-width : 767px)
+{
+  html[dir="ltr"] .icon{
+    margin-left: 10px;
+  }
+  html[dir="rtl"] .icon{
+    margin-right: 10px;
+  }
+}

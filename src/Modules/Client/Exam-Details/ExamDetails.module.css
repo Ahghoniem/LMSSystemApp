@@ -1,0 +1,42 @@
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 80px;
+  min-height: 81vh;
+  transition: margin-right 0.4s ease;
+  -webkit-transition: margin-right 0.4s ease;
+  -moz-transition: margin-right 0.4s ease;
+  -ms-transition: margin-right 0.4s ease;
+  -o-transition: margin-right 0.4s ease;
+}
+
+.pageTitle {
+  font-size: 26px;
+  margin: 10px 0 18px;
+  font-weight: 800;
+  color: #0a2a4d;
+  text-align: center;
+}
+
+.tableContainer {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px 20px 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+@media (min-width: 778px) {
+  html[dir="rtl"] .tableContainer {
+    margin-right: 70px;
+  }
+  html[dir="ltr"] .tableContainer {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pageTitle {
+    font-size: 22px;
+  }
+}

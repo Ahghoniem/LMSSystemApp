@@ -1,0 +1,27 @@
+{
+  "title": "Session Details",
+
+  "fields": {
+    "name": "Session Name in arabic",
+    "nameEn":"Session Name in english",
+    "date": "Date",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "virtualLink": "Session Link"
+  },
+
+  "actions": {
+    "edit": "Edit",
+    "save": "Save Changes",
+    "saving": "Saving...",
+    "cancel": "Cancel"
+  },
+
+  "validation": {
+    "required": "This field is required",
+    "requiredArabicName": "Arabic name is required.",
+    "arabicOnly": "Please enter only Arabic characters.",
+    "requiredEnglishName": "English name is required.",
+    "englishOnly": "Please enter only English letters."
+  }
+}

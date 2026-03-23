@@ -1,0 +1,288 @@
+.pageUserDetails {
+  font-family: "Cairo", sans-serif;
+  background-color: #f8fafc;
+  padding: 20px;
+  color: #0a2a4d;
+}
+
+.mainContent {
+  background-color: #fff;
+  margin-top: 70px;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contentHeader {
+  text-align: center;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.contentHeader h1 {
+  font-size: 24px;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  color: #0a2a4d;
+}
+
+.userDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Section Navigation */
+.sectionNavigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Cairo", sans-serif;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.navBtn {
+  background-color: #f3f4f6;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0a2a4d;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navBtn:hover {
+  background-color: #e5e7eb;
+}
+
+.navBtn i {
+  color: #b38e19;
+}
+
+.active {
+  background-color: #b38e19;
+  color: #fff;
+}
+
+.active i {
+  color: #fff;
+}
+
+/* Section Content */
+.sectionContent {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Info Card */
+.userInfoCard {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.sectionHeader {
+  margin-bottom: 20px;
+}
+
+.sectionHeader h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a2a4d;
+}
+
+.sectionHeader p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.userDataGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px 20px;
+}
+
+.dataItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.dataLabel {
+  font-weight: 600;
+  color: #0a2a4d;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.dataValue {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #111827;
+  font-size: 15px;
+}
+
+.editInput {
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.editInput:focus {
+  border-color: #8f7316;
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnSecondary,
+.btnDanger,
+.btnCancel {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.btnPrimary {
+  background-color: #b38e19;
+  color: #fff;
+}
+
+.btnPrimary:hover {
+  background-color: #8f7316;
+}
+
+.btnSecondary {
+  background-color: #e5e7eb;
+  color: #0a2a4d;
+}
+
+.btnSecondary:hover {
+  background-color: #d1d5db;
+}
+
+.btnDanger {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.btnDanger:hover {
+  background-color: #dc2626;
+}
+
+.btnDanger:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 15px;
+  }
+
+  .contentHeader h1 {
+    font-size: 20px;
+  }
+
+  .userDataGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actionButtons {
+    justify-content: center;
+  }
+}
+@media (min-width: 767px) {
+  html[dir="rtl"] .pageUserDetails {
+    margin-right: 70px;
+  }
+  html[dir="ltr"] .pageUserDetails {
+    margin-left: 70px;
+  }
+}
+.inlineFlex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inlineInput {
+  flex: 1;
+}
+.btnCancel {
+  background-color: #e5e7eb;
+  color: #0a2a4d;
+  font-size: 17px;
+  gap: 5px;
+}
+.error {
+  color: red;
+  font-size: 14px;
+}
+.btnPrimary:disabled {
+  background: #a0a0a0;
+  color: #f0f0f0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.reservationCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px 20px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 20px;
+}

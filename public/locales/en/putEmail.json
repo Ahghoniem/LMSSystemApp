@@ -1,0 +1,12 @@
+{
+  "title": "Email Verification",
+  "subtitle": "Please enter your university email to send a verification code",
+  "emailLabel": "Email Address",
+  "emailPlaceholder": "Enter your email address",
+  "sendCode": "Send Code",
+  "emailReq":"Email is Required",
+   "emailInvalid": "Invaild Email Format",
+   "AllFieldsReq":"All fields are required",
+   "loading":"Loading",
+   "verifyRes":"The Email is already exsist"
+}

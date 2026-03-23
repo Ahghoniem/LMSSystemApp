@@ -1,0 +1,788 @@
+:root {
+  --dark-blue: #0a2a4d;
+  --navy-2: #27496d;
+  --page-bg: #f3f5f8;
+  --gold: #b38e19;
+  --font-family: "Cairo", sans-serif;
+}
+
+.content {
+  background-color: var(--page-bg);
+  flex: 1;
+  padding: 2rem;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 50px);
+}
+
+.profileWrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profileCard {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  font-family: var(--font-family);
+}
+
+/* Main Title */
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Description */
+.description {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Update Section Title */
+.updateTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: 0.75rem;
+  text-align: right;
+}
+
+html[dir="ltr"] .updateTitle {
+  text-align: left;
+}
+
+/* Update Description */
+.updateDescription {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  text-align: right;
+  line-height: 1.6;
+}
+
+html[dir="ltr"] .updateDescription {
+  text-align: left;
+}
+
+/* Form */
+.profileForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+html[dir="ltr"] .profileForm {
+  align-items: flex-start;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formField label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy-2);
+  text-align: right;
+}
+
+html[dir="ltr"] .formField label {
+  text-align: left;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+  height: 52px;
+}
+
+.inputField::placeholder {
+  color: #94a3b8;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.inputField:hover {
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: var(--dark-blue);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(10, 42, 77, 0.1);
+}
+
+.inputField:disabled {
+  background: #f1f5f9;
+  color: #64748b;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.inputField:disabled::placeholder {
+  color: #94a3b8;
+}
+
+/* Submit Button */
+.submitButton {
+  background: var(--gold);
+  color: #fff;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: all 0.3s ease;
+  width: auto;
+  min-width: 200px;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #9a7a15;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(179, 142, 25, 0.3);
+}
+
+.submitButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Submit button aligned to right (below username field in RTL) */
+.profileForm > .submitButton {
+  align-self: flex-end !important;
+}
+
+html[dir="rtl"] .profileForm > .submitButton {
+  align-self: flex-end !important;
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+html[dir="ltr"] .profileForm > .submitButton {
+  align-self: flex-start !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.cancelButton {
+  background: #64748b;
+  color: #fff;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: all 0.3s ease;
+  width: auto;
+  min-width: 200px;
+}
+
+.cancelButton:hover {
+  background: #475569;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(100, 116, 139, 0.2);
+}
+
+.cancelButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .formRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .passwordFormRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 1rem;
+    margin-top: 70px;
+  }
+
+  .profileCard {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+
+  .mainTitle {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  .updateTitle {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .updateDescription {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .formField label {
+    font-size: 0.9rem;
+  }
+
+  .inputField {
+    font-size: 0.95rem;
+    padding: 0.75rem 0.875rem;
+    height: 48px;
+  }
+
+  .submitButton {
+    width: 100%;
+    min-width: unset;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .buttonGroup .submitButton,
+  .buttonGroup .cancelButton {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .passwordSection {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
+  .passwordTitle {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .passwordDescription {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .passwordFormRow {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .passwordColumn {
+    gap: 1.25rem;
+  }
+
+  .passwordField label {
+    font-size: 0.9rem;
+  }
+
+  .passwordInput {
+    font-size: 0.95rem;
+    padding: 0.75rem 2.5rem 0.75rem 0.875rem;
+    height: 48px;
+  }
+
+  html[dir="rtl"] .passwordInput {
+    padding: 0.75rem 0.875rem 0.75rem 2.5rem;
+  }
+
+  .passwordSubmitButton {
+    width: 100%;
+    min-width: unset;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .permissionsSection {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
+  .permissionsTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .permissionsDescription {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .permissionsTable {
+    font-size: 0.85rem;
+  }
+
+  .permissionCell {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.8rem;
+    min-height: 50px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 0.75rem;
+    margin-top: 60px;
+  }
+
+  .profileCard {
+    padding: 1.25rem 0.875rem;
+    border-radius: 10px;
+  }
+
+  .mainTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .updateTitle {
+    font-size: 1.15rem;
+  }
+
+  .updateDescription {
+    font-size: 0.85rem;
+  }
+
+  .formRow {
+    gap: 1rem;
+  }
+
+  .formField label {
+    font-size: 0.85rem;
+  }
+
+  .inputField {
+    font-size: 0.9rem;
+    padding: 0.7rem 0.75rem;
+    height: 44px;
+  }
+
+  .submitButton,
+  .cancelButton {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .passwordTitle {
+    font-size: 1.15rem;
+  }
+
+  .passwordDescription {
+    font-size: 0.85rem;
+  }
+
+  .passwordInput {
+    font-size: 0.9rem;
+    padding: 0.7rem 2.25rem 0.7rem 0.75rem;
+    height: 44px;
+  }
+
+  html[dir="rtl"] .passwordInput {
+    padding: 0.7rem 0.75rem 0.7rem 2.25rem;
+  }
+
+  .eyeIcon {
+    font-size: 1rem;
+  }
+
+  .permissionsTitle {
+    font-size: 1.3rem;
+  }
+
+  .permissionsDescription {
+    font-size: 0.85rem;
+  }
+
+  .permissionCell {
+    padding: 0.625rem 0.75rem;
+    font-size: 0.75rem;
+    min-height: 45px;
+  }
+}
+
+/* Password Update Section */
+.passwordSection {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.passwordTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: 0.75rem;
+  text-align: right;
+}
+
+html[dir="ltr"] .passwordTitle {
+  text-align: left;
+}
+
+.passwordDescription {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  text-align: right;
+  line-height: 1.6;
+}
+
+html[dir="ltr"] .passwordDescription {
+  text-align: left;
+}
+
+.passwordForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.passwordFormRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.passwordColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.passwordButtonContainer {
+  display: flex;
+  width: 100%;
+}
+
+html[dir="rtl"] .passwordButtonContainer {
+  justify-content: flex-end !important;
+  align-items: flex-end !important;
+}
+
+html[dir="ltr"] .passwordButtonContainer {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+.passwordButtonContainer .passwordSubmitButton {
+  margin: 0;
+}
+
+html[dir="rtl"] .passwordButtonContainer .passwordSubmitButton {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+html[dir="ltr"] .passwordButtonContainer .passwordSubmitButton {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+.passwordField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.passwordField label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy-2);
+  text-align: right;
+}
+
+html[dir="ltr"] .passwordField label {
+  text-align: left;
+}
+
+.passwordInputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.passwordInput {
+  width: 100%;
+  padding: 0.875rem 3rem 0.875rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+html[dir="rtl"] .passwordInput {
+  padding: 0.875rem 1rem 0.875rem 3rem;
+}
+
+.passwordInput:hover {
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+}
+
+.passwordInput:focus {
+  outline: none;
+  border-color: var(--dark-blue);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(10, 42, 77, 0.1);
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+html[dir="rtl"] .eyeIcon {
+  right: auto;
+  left: 10px;
+}
+
+.eyeIcon:hover {
+  color: #333;
+}
+
+.passwordSubmitButton {
+  background: var(--gold);
+  color: #fff;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: all 0.3s ease;
+  width: auto;
+  min-width: 200px;
+}
+
+.passwordSubmitButton:hover:not(:disabled) {
+  background: #9a7a15;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(179, 142, 25, 0.3);
+}
+
+.passwordSubmitButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.passwordSubmitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* Permissions Section */
+.permissionsSection {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.permissionsTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--dark-blue);
+  margin-bottom: 0.75rem;
+  text-align: right;
+}
+
+html[dir="ltr"] .permissionsTitle {
+  text-align: left;
+}
+
+.permissionsDescription {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  text-align: right;
+  line-height: 1.6;
+}
+
+html[dir="ltr"] .permissionsDescription {
+  text-align: left;
+}
+
+.permissionsTableContainer {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.permissionsTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.permissionCell {
+  padding: 1rem 1.25rem;
+  border: 1px solid #e2e8f0;
+  text-align: right;
+  font-size: 0.95rem;
+  color: #1e293b;
+  font-weight: 500;
+  background: #fff;
+  transition: background-color 0.2s ease;
+  vertical-align: top;
+  min-height: 60px;
+}
+
+html[dir="ltr"] .permissionCell {
+  text-align: left;
+}
+
+.permissionCell:hover {
+  background: #f8fafc;
+}
+
+.permissionsTable tbody tr:nth-child(even) .permissionCell {
+  background: #fafbfc;
+}
+
+.permissionsTable tbody tr:nth-child(even) .permissionCell:hover {
+  background: #f1f5f9;
+}
+
+
+@media (min-width: 768px) {
+  html[dir="rtl"] .profileWrapper {
+    margin-right: 70px;
+  }
+  html[dir="ltr"] .profileWrapper {
+    margin-left: 70px;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 767px) {
+  html[dir="rtl"] .profileWrapper,
+  html[dir="ltr"] .profileWrapper {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .profileForm {
+    align-items: stretch;
+  }
+
+  .profileForm > .submitButton {
+    align-self: stretch !important;
+    width: 100% !important;
+  }
+
+  .passwordButtonContainer {
+    justify-content: stretch !important;
+  }
+
+  .passwordButtonContainer .passwordSubmitButton {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .permissionsTableContainer {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .permissionsTable {
+    min-width: 600px;
+  }
+}
+.error{
+  font-size: 14px;
+  color: red;
+}

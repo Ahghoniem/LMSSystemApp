@@ -1,0 +1,24 @@
+{
+    "addNewPermissionFile": "Add New Permission File",
+    "permissionFileInfo": "Permission File Information",
+    "fillPermissionFileDetails": "Fill in the details of the new permission file, including Arabic and English names.",
+    "nameAr": "Name (Arabic)",
+    "enterNameAr": "Enter name in Arabic",
+    "nameEn": "Name (English)",
+    "enterNameEn": "Enter name in English",
+    "selectPermissions": "Select Permissions",
+    "choosePermissions": "Choose the permissions to grant for this permission file.",
+    "selectGroup": "Select All",
+    "unselectGroup": "Unselect All",
+    "createPermissionFile": "Create Permission File",
+    
+    "requiredArabicName": "Arabic name is required.",
+    "arabicOnly": "Please enter only Arabic characters.",
+    "requiredEnglishName": "English name is required.",
+    "englishOnly": "Please enter only English letters.",
+    "selectAtLeastOnePermission": "Please select at least one permission.",
+    "sucess":"New perimssion file has been created successfully",
+    "selectAllPermissions": "Select all permissions",
+    "unselectAllPermissions": "Unselect all permissions"
+  }
+  

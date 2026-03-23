@@ -1,0 +1,98 @@
+{
+  "title": "Create a New Account",
+  "subtitle": "Join Helwan University Digital Community",
+
+  "steps": ["Personal", "University", "Study", "Account"],
+
+  "personal": {
+    "full_name_ar": "Full Name in Arabic",
+    "full_name_en": "Full Name in English",
+    "nationality": "Nationality",
+    "egyptian": "Egyptian",
+    "foreigner": "Foreigner",
+    "id_number_egypt": "Enter National ID *",
+    "id_number_foreign": "Enter Passport Number *",
+    "id_image": "ID / Passport Image",
+    "id_image_back": "Back Side of ID"
+  },
+
+  "university": {
+    "university": "University",
+    "helwan": "Helwan",
+    "other": "Other",
+    "other_placeholder": "Enter University Name",
+    "faculty": "Faculty",
+    "engineering": "Engineering",
+    "computer_science": "Computer Science & AI",
+    "commerce": "Commerce",
+    "law": "Law",
+    "arts": "Arts",
+    "science": "Science",
+    "otherFaculty":"Enter your faculty",
+    "other_option":"Other"
+  },
+
+  "study": {
+    "study_level": "Select Study Level",
+    "diploma": "Postgraduate Researcher (Diploma)",
+    "masters": "Postgraduate Researcher (Masters)",
+    "Teachers": "Faculty Staff Promotion",
+    "PHD":"Postgraduate Researcher (PHD)",
+    "training_course": "I want to attend the course",
+    "direct_exam": "Exam Only",
+    "online": "Exam + Training",
+    "study_language": "Study Language",
+    "english": "English",
+    "arabic": "Arabic",
+    "department": "Scientific Department"
+  },
+
+  "account": {
+    "username": "Username",
+    "phone": "Phone Number",
+    "password": "Password",
+    "confirm_password": "Confirm Password"
+  },
+
+  "buttons": {
+    "previous": "Previous",
+    "next": "Next",
+    "submit": "Create Account"
+  },
+
+  "alert": "Form submitted successfully!",
+  "errors": {
+  "required": "This field is required",
+  "arabic_only": "Please enter Arabic letters only",
+  "english_only": "Please enter English letters only",
+  "invalid_id": "National ID must be 14 digits"
+},  
+    "passwordReq":"Password is required",
+    "passwordLen":"Password must be at least 8 characters",
+    "passwordUpper":"Paasword must has at least one Uppercase letter",
+    "passwordSpecial":"Paasword must has at least one special character",
+    "passwordMatch":"Paasword and confirm password are not matching",
+    "confirmPassReq":"Confirm passowrd is required",
+    "Mobile": {
+      "invalid": "Invalid phone number format.",
+      "not_valid": "This is not a valid phone number.",
+      "not_possible": "This phone number is not possible.",
+      "not_mobile": "Only mobile numbers are allowed.",
+      "required": "Mobile number is required."
+    },
+    "OCR":{
+    "Success":"You have been regiesterd successfully and now you can go to your profile to see your regiesterd data and the required fees",
+    "Error":"Error matching the national ID number on the card with the national ID number you have entered. Please re-enter the card image more clearly.",
+    "Warning":"You have been registered successfully but we cannot  match your national id you have entered with the id in your card so the account will be under admin review until they review your data and now you kan to to your profile to see your data"
+    },
+    "Popup":{
+      "Continue":"Continue",
+      "Cancel":"Cancel",
+      "Warning":"Warining, you must know that the certificate will not be reliable except ypu are from cairo residents"
+     },
+    "loading":"Loading",
+    "emailInvalid": "Invaild Email Format",
+    "selectNationality":"Select Your nationality",
+    "selectUni":"Select Your University",
+    "selectColl":"Select Your Collage"
+}

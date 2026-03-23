@@ -1,0 +1,22 @@
+{
+    "pageTitle": "Trainees Record",
+    "table": {
+      "fullName": "Full Name",
+      "nationalId": "National ID",
+      "university": "University",
+      "college": "College",
+      "department": "Department",
+      "status": "Status",
+      "createdAt": "Registration Date"
+    },
+    "pending":"Waiting for data review",
+    "approved":"Waiting for payment process",
+    "reserved training":"Reserved Training",
+    "reserved exam":"Reserved Exam",
+    "succeeded":"Fininshed The Course",
+    "startDate":"Start Date",
+    "endDate":"End Date",
+    "select":"Select",
+    "limit":"Limit"
+  }
+  

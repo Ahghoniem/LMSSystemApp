@@ -1,0 +1,52 @@
+{
+  "titles": {
+    "addNewMemberTrain": "اضافة مدرب جديد",
+    "addNewMemberSuper": "اضافة مشرف جديد",
+    "addNewMemberAdmin": "اضافة مسؤول جديد"
+  },
+  "fields": {
+    "nameAr": "الاسم بالعربية",
+    "nameEn": "الاسم بالإنجليزية",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "permissionFile": "ملف الصلاحيات"
+  },
+  "placeholders": {
+    "nameAr": "ادخل الاسم بالعربية",
+    "nameEn": "ادخل الاسم بالإنجليزية",
+    "email": "ادخل البريد الإلكتروني",
+    "password": "ادخل كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "selectPermissionFile": "اختر ملف الصلاحيات",
+    "loading": "جاري التحميل..."
+  },
+  "buttons": {
+    "addMember": "اضافة عضو",
+    "updateMember": "تحديث العضو",
+    "loading": "جاري التحميل..."
+  },
+  "errors": {
+    "required": "هذا الحقل مطلوب",
+    "english_only": "الرجاء ادخال حروف انجليزية فقط",
+    "arabic_only": "الرجاء ادخال حروف عربية فقط",
+    "emailInvalid": "صيغة البريد الإلكتروني غير صحيحة",
+    "passwordLen": "كلمة المرور يجب أن لا تقل عن 8 أحرف",
+    "passwordUpper": "كلمة المرور يجب أن تحتوي على حرف كبير واحد على الأقل",
+    "passwordSpecial": "كلمة المرور يجب أن تحتوي على رمز خاص واحد على الأقل",
+    "passwordMismatch": "كلمتا المرور غير متطابقتين",
+    "selectAtLeastOnePermission": "اختر صلاحية واحدة على الأقل"
+  },
+  "messages": {
+    "memberAdded": "تم اضافة العضو بنجاح",
+    "errorAdding": "حدث خطأ أثناء إضافة العضو"
+  },
+  "permissionsSection": {
+    "title": "تعيين الصلاحيات",
+    "desc": "اختر الصلاحيات التي ستمنح لهذا المسؤول",
+    "selectGroup": "اختر المجموعة",
+    "unselectGroup": "الغاء اختيار المجموعة",
+    "selectAllPermissions": "اختر كل الصلاحيات",
+    "unselectAllPermissions": "الغاء اختيار كل الصلاحيات"
+  }
+}

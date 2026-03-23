@@ -1,0 +1,11 @@
+{
+    "progressBar": {
+      "registered": "Registered",
+      "paid": "Payment Completed",
+      "reservedTraining": "Course Reserved",
+      "examined": "Exam Completed",
+      "completed": "Course Completed",
+      "reservedExam":"Exam Reserved"
+    }
+  }
+  

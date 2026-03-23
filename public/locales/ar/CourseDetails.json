@@ -1,0 +1,42 @@
+{
+  "title": "تفاصيل الكورس",
+  "fields": {
+    "courseId": "رقم الكورس",
+    "courseNameEn": "اسم الكورس بالإنجليزية",
+    "courseNameAr": "اسم الكورس بالعربية",
+    "title": "العنوان",
+    "priceForEgypt": "السعر للمصريين",
+    "priceForForigner": "السعر للأجانب",
+    "currency": "العملة"
+  },
+  "placeholders": {
+    "courseNameEn": "أدخل اسم الكورس بالإنجليزية",
+    "courseNameAr": "أدخل اسم الكورس بالعربية",
+    "title": "أدخل عنوان الكورس",
+    "priceForEgypt": "أدخل السعر للمصريين",
+    "priceForForigner": "أدخل السعر للأجانب"
+  },
+  "options": {
+    "selectCurrency": "اختر العملة"
+  },
+  "buttons": {
+    "edit": "تعديل",
+    "save": "حفظ التغييرات",
+    "cancel": "إلغاء",
+    "saving": "جاري الحفظ...",
+    "delete":"حذف"
+  },
+  "errors": {
+    "required": "هذا الحقل مطلوب",
+    "arabic_only": "الرجاء إدخال أحرف عربية فقط",
+    "english_only": "الرجاء إدخال أحرف إنجليزية فقط",
+    "invalidNumber": "الرجاء إدخال رقم صحيح موجب"
+  },
+  "messages": {
+    "courseUpdated": "تم تحديث الكورس بنجاح",
+    "updateError": "حدث خطأ في التحديث",
+    "DeleteError":"حدث خطأ في الحذف",
+    "courseDeleted":"تم حذف الكورس بنجاح"
+  }
+}
+

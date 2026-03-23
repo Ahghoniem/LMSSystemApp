@@ -1,0 +1,319 @@
+:root{
+  --font-family: "Cairo", sans-serif;
+  --dark-blue:#0a2a4d;
+  --gold:#b38e19;
+  --page-bg:#eef2f6;
+  --text:#0b1424;
+  --muted:#6b7280;
+  --white:#fff;
+  --card-border:#e7ebf0;
+  --shadow:0 8px 18px rgba(3,24,46,.08);
+  --w-regular:400; 
+  --w-medium:500; 
+  --w-semibold:600;
+  --w-bold:700;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.container{width:min(1400px, 94vw);margin-inline:auto;padding-inline:clamp(10px,2vw,16px); margin-top: 70px;}
+/* Hero */
+.courseHero {
+  background: var(--white);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: clamp(16px, 2.4vw, 22px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 92vh;
+}
+.courseIdentity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.courseLogo {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--gold), #e7c658);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(179, 142, 25, 0.35);
+}
+
+.courseLogo i {
+  font-size: 26px;
+}
+
+.courseTitleWrap h1 {
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  color: var(--dark-blue);
+  font-weight: var(--w-bold);
+}
+
+.courseBrief {
+  color: var(--muted);
+}
+
+.heroActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btnWide {
+  width: auto;
+  min-width: 220px;
+}
+
+.btnGhost {
+  background: #fff;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  color: var(--dark-blue);
+  padding: 10px 14px;
+  font-weight: var(--w-semibold);
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
+.btnGhost:hover {
+  background: #f7f8fb;
+}
+
+/* Slots */
+.courseSlots {
+  background: var(--white);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: clamp(16px, 2.4vw, 22px);
+}
+
+.slotsHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.slotsHead h2 {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tableWrap {
+  overflow: auto;
+}
+
+/* Desktop table */
+.slotsTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 820px;
+}
+
+.slotsTable thead th {
+  background: var(--dark-blue);
+  color: #fff;
+  text-align: right;
+  font-weight: var(--w-semibold);
+  padding: 14px 12px;
+  position: sticky;
+  top: 0;
+}
+
+.slotsTable thead th:first-child {
+  border-top-right-radius: 12px;
+}
+
+.slotsTable thead th:last-child {
+  border-top-left-radius: 12px;
+}
+
+.slotsTable tbody td {
+  background: #fff;
+  border-bottom: 1px solid var(--card-border);
+  padding: 12px;
+  vertical-align: middle;
+}
+
+.slotsTable tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.slotsTable tbody tr:hover td {
+  background: #fbfcff;
+}
+
+/* Badges */
+.typeChip {
+  display: inline-block;
+  background: #f2f6fb;
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.92rem;
+  color: var(--dark-blue);
+}
+
+.status {
+  font-weight: var(--w-semibold);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.statusOpen {
+  background: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #cde9cf;
+}
+
+.statusClosed {
+  background: #fff1f1;
+  color: #991b1b;
+  border: 1px solid #ffd1d1;
+}
+
+/* Join button */
+.btnJoin {
+  background: var(--gold);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 9px 16px;
+  font-weight: var(--w-semibold);
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+.btnJoin:disabled {
+  filter: grayscale(0.5);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Visually hidden */
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Mobile responsive table */
+@media (max-width: 768px) {
+  .tableWrap {
+    overflow: visible;
+  }
+
+  .slotsTable {
+    border: 0;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .slotsTable thead {
+    display: none;
+  }
+
+  .slotsTable tbody {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .slotsTable tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    background: #fff;
+    padding: 12px;
+  }
+
+  .slotsTable td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 0 !important;
+    padding: 4px 0;
+  }
+
+  .slotsTable td::before {
+    content: attr(data-label);
+    color: var(--muted);
+    font-weight: var(--w-medium);
+  }
+
+  .slotsTable td:last-child {
+    padding-top: 8px;
+  }
+
+  .btnJoin {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media(min-width:767px){
+  html[dir="rtl"] .app{
+    margin-right: 70px;
+  }
+  html[dir="ltr"] .app{
+    margin-left: 70px;
+  }
+}
+
+.detailsModalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background: rgba(10, 42, 77, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+.detailsModalContent {
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  margin: auto;
+}

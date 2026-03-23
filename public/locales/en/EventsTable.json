@@ -1,0 +1,24 @@
+{
+  "eventName": "Event Name",
+  "events": {
+    "title": "Event Name",
+    "type": "Type",
+    "training": "Training",
+    "exam": "Exam",
+    "registrationStartDate": "Registration Start Date",
+    "registrationEndDate": "Registration End Date",
+    "capacity": "Capacity",
+    "numberOfRegistered": "Registered Count",
+    "status": "Status",
+    "limit": "Limit",
+    "userRegisteredTitle": "Registered events",
+    "noRegisteredEvents": "You are not registered in any events yet.",
+    "statusNotStarted": "Not started",
+    "statusInProgress": "In progress",
+    "statusFinished": "Finished",
+    "popupOtherCourses": "Other courses",
+    "popupBack": "Back"
+  },
+  "opend": "Open",
+  "closed": "Closed"
+}

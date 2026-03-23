@@ -1,0 +1,32 @@
+{
+    "add_package": {
+      "pageTitle": "إضافة حزمة جديدة",
+      "typeLabel": "نوع الحزمة",
+      "typePlaceholder": "اختر النوع",
+      "typeOptions": {
+        "training": "تدريب",
+        "exam": "امتحان"
+      },
+      "nameLabelArabic": "اسم الحزمة باللغة العربية",
+      "namePlaceholderArabic": "أدخل اسم الحزمة باللغة العربية",
+      "nameLabelEnglish": "اسم الحزمة باللغة الانجليزية",
+      "namePlaceholderEnglish": "أدخل اسم الحزمة باللغة الانجليزية",
+      "countLabel": "عدد العناصر",
+      "trainingLabel": "التدريب",
+      "examLabel": "الامتحان",
+      "itemPlaceholder": "اختر",
+      "trainingItems": ["تدريب 1", "تدريب 2", "ورشة 3"],
+      "examItems": ["امتحان مستوى 1", "امتحان مستوى 2", "اختبار نهائي"],
+      "submitBtn": "إضافة",
+      "validationError": "من فضلك أكمل جميع الحقول!",
+      "emptyItemError": "من فضلك اختر جميع العناصر!",
+      "successMessage": "تمت إضافة الحزمة بنجاح!",
+      "addedDataTitle": "البيانات المضافة:"
+    },
+    "arabic_only": "الرجاء إدخال أحرف عربية فقط",
+    "english_only": "الرجاء إدخال أحرف إنجليزية فقط",
+    "item":"العنصر",
+    "select":"اختر",
+    "type":"النوع المتاح لهذه الحزمة"
+  }
+  

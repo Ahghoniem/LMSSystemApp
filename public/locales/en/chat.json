@@ -1,0 +1,12 @@
+{
+    "title":"Chats",
+    "desc":"Select a chat to start messaging",
+    "NetworkError":"Network connection error please try again later",
+    "startChat":"Start New Chat",
+    "Cancel":"Cancel",
+    "Send":"Send",
+    "inputPlaceHolder":"Type a message...",
+    "GpMembers":"Group Members",
+    "Close":"Close",
+    "voice":"Voice Message"
+}

@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap");
+
+:root {
+  --dark-blue: #0a2a4d;
+  --navy-2: #27496d;
+  --page-bg: #f3f5f8;
+  --gold: #b38e19;
+  --font-family: "Cairo", sans-serif;
+}
+.dashboardWrapper {
+  background: var(--page-bg);
+  font-family: var(--font-family);
+  min-height: calc(100vh - 80px);
+  margin-top: 80px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--dark-blue);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.counters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.counterCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.counterCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.counterNumber {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin: 0;
+}
+.counterCard span {
+  color: var(--navy-2);
+  font-weight: 600;
+}
+.resultsRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.resultCard {
+  flex: 1;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.resultCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.resultCard h4 {
+  font-size: 1.1rem;
+  color: var(--navy-2);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.resultCard h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0.5rem 0;
+}
+
+.resultGrowth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.successCard h2 {
+  color: #22c55e;
+}
+.successCard .resultGrowth {
+  color: #22c55e;
+}
+.failCard h2 {
+  color: #ef4444;
+}
+.failCard .resultGrowth {
+  color: #ef4444;
+}
+.chartsRow {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.chartContainerLarge {
+  flex: 1;
+  background: #fafafa;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  min-width: 350px;
+}
+.nationalityStats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.nationalityItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+.colorDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+.egyptians {
+  fill: var(--dark-blue);
+  background-color: var(--dark-blue);
+}
+.foreigners {
+  fill: var(--gold);
+  background-color: var(--gold);
+}
+.egyptians:hover,
+.foreigners:hover {
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+.analyticsBox {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+}
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+.chartTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy-2);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .chartsRow {
+    flex-direction: column;
+  }
+  .resultCard h2 {
+    font-size: 1.6rem;
+  }
+  .pageTitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .resultsRow {
+    flex-direction: column;
+  }
+  .analyticsBox {
+    padding: 1.5rem;
+  }
+  .counterCard {
+    padding: 1.2rem;
+  }
+  .chartContainerLarge {
+    min-width: 100%;
+  }
+  .nationalityStats {
+    gap: 1rem;
+  }
+}
+@media(min-width:767px){
+  html[dir="rtl"] .dashboardWrapper {
+    margin-right: 70px;
+  }
+  html[dir="ltr"] .dashboardWrapper {
+    margin-left: 70px;
+  }
+}

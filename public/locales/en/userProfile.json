@@ -1,0 +1,47 @@
+{
+    "Title": "User Profile",
+    "personalInfo": "Personal Information",
+    "registrationInfo": "Registration Information",
+    "paymentInfo": "Payment Information",
+  
+    "fullNameAr": "Full Name (Arabic)",
+    "fullNameEn": "Full Name (English)",
+    "nationality": "Nationality",
+    "nationalId": "National ID",
+    "mobile": "Mobile Number",
+    "email": "Email",
+    "Passport":"Passport Number",
+  
+    "university": "University",
+    "faculty": "Faculty",
+    "stage": "Registered Level",
+    "coursePreference": "Preferred Course",
+    "studyLanguage": "Study Language",
+    "department": "Department",
+    "registrationType": "Registration Type",
+  
+    "courseName": "Course Name",
+    "amount": "Amount",
+    "date": "Date",
+    "status": "Status",
+  
+    "openPopup": "View QR",
+    "diploma": "Postgraduate Researcher (Diploma)",
+    "masters": "Postgraduate Researcher (Masters)",
+    "Teachers": "Faculty Staff Promotion",
+    "PHD":"Postgraduate Researcher (PHD)",
+    "Egypt":"Egyptian",
+    "foreigner":"Foreigner",
+    "EN":"English",
+    "AR":"Arabic",
+    "PENDING":"Pending",
+    "pending":"Pending",
+    "reserveInfo":"Reservation Info",
+    "eventName":"Event Name",
+    "startDate":"Course Start Date",
+    "endDate":"Course End Date",
+    "type":"Event Type",
+    "training":"Training",
+    "exam":"Exam"
+  }
+  

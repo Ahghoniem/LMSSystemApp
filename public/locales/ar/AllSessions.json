@@ -1,0 +1,43 @@
+{
+  "allSessions": "جميع الجلسات",
+  "trainingSessions": "جلسات التدريب",
+  "addSession": "إضافة جلسة",
+  "backToTrainings": "العودة إلى التدريبات",
+
+  "noSessions": "لا توجد جلسات",
+
+  "duration": "المدة",
+
+  "viewDetails": "عرض التفاصيل",
+  "delete": "حذف",
+  "deleting": "جاري الحذف...",
+  "confirmDelete": "هل أنت متأكد من حذف هذه الجلسة؟",
+  "sessionDeleted": "تم حذف الجلسة بنجاح",
+  "deleteError": "فشل حذف الجلسة",
+  "deleteSessionTitle": "حذف الجلسة؟",
+
+  "sessionUpdated": "تم تحديث الجلسة بنجاح",
+  "updateError": "فشل تحديث الجلسة",
+
+  "attendanceDetails": "تفاصيل الحضور",
+  "trainingMaterials": "المواد التدريبية",
+  "qrCode": "رمز QR",
+
+  "materials": {
+    "title": "المواد التدريبية",
+    "empty": "لا توجد مواد بعد.",
+    "add": "إضافة مادة",
+    "edit": "تعديل مادة",
+    "delete": "حذف",
+    "deleteConfirmTitle": "حذف المادة؟",
+    "deleteConfirmText": "هل أنت متأكد أنك تريد حذف هذه المادة؟",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "uploadFile": "رفع ملف",
+    "uploadRequired": "يرجى رفع ملف",
+    "deleteSuccess": "تم حذف المادة بنجاح",
+    "deleteError": "فشل في حذف المادة",
+    "addSuccess": "تم إضافة المادة بنجاح",
+    "addError": "فشل في إضافة المادة"
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "addNewPermissionFile": "إضافة ملف صلاحيات جديد",
+    "permissionFileInfo": "معلومات ملف الصلاحيات",
+    "fillPermissionFileDetails": "املأ تفاصيل ملف الصلاحيات الجديد، بما في ذلك الاسم بالعربية والإنجليزية.",
+    "nameAr": "الاسم بالعربية",
+    "enterNameAr": "أدخل الاسم بالعربية",
+    "nameEn": "الاسم بالإنجليزية",
+    "enterNameEn": "أدخل الاسم بالإنجليزية",
+    "selectPermissions": "تحديد الصلاحيات",
+    "choosePermissions": "اختر الصلاحيات التي سيتم منحها لملف الصلاحيات.",
+    "selectGroup": "تحديد الكل",
+    "unselectGroup": "إلغاء تحديد الكل",
+    "createPermissionFile": "إنشاء ملف صلاحيات",
+    
+    "requiredArabicName": "الاسم بالعربية مطلوب.",
+    "arabicOnly": "الرجاء إدخال الأحرف العربية فقط.",
+    "requiredEnglishName": "الاسم بالإنجليزية مطلوب.",
+    "englishOnly": "الرجاء إدخال الأحرف الإنجليزية فقط.",
+    "selectAtLeastOnePermission": "الرجاء اختيار صلاحية واحدة على الأقل.",
+    "sucess":"تم اضافة ملف صلاحيات جديد بنجاح",
+    "selectAllPermissions": "تحديد جميع الصلاحيات",
+    "unselectAllPermissions": "إلغاء تحديد جميع الصلاحيات"
+    
+    
+  }

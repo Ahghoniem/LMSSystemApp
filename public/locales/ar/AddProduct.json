@@ -1,0 +1,41 @@
+{
+    "title": "إضافة منتج",
+    "fields": {
+        "englishName": "الاسم الإنجليزي",
+        "arabicName": "الاسم العربي",
+        "allowedUsers": "المستخدمون المسموحون",
+        "numberOfCourses": "عدد الدورات",
+        "numberOfCoursesPlaceholder": "أدخل عدد الدورات",
+        "pricingForEgyptians": "السعر للمصريين",
+        "pricingForEgyptiansPlaceholder": "أدخل السعر للمصريين",
+        "pricingForForeigners": "السعر للأجانب",
+        "pricingForForeignersPlaceholder": "أدخل السعر للأجانب",
+        "currency": "العملة لغير المصريين",
+        "currencyPlaceholder": "أدخل العملة (مثال: جنيه، دولار)",
+        "receiptEgyptians": "ايصال المصريين",
+        "receiptForeigners": "ايصال الوافيدين"
+    },
+    "options": {
+        "select": "اختر",
+        "selectCurrency": "اختر العملة",
+        "selectReceipt": "اختر الإيصال"
+    },
+    "buttons": {
+        "accept": "تأكيد",
+        "loading": "جاري التحميل..."
+    },
+    "errors": {
+        "required": "هذا الحقل مطلوب",
+        "invalidNumber": "الرجاء إدخال رقم صحيح موجب",
+        "submitFailed": "فشل إضافة المنتج",
+        "arabic_only": "الرجاء إدخال أحرف عربية فقط",
+        "english_only": "الرجاء إدخال أحرف إنجليزية فقط"
+    },
+    "success": {
+        "productAdded": "تم إضافة المنتج بنجاح"
+    },
+    "diploma": " باحث دراسات عليا (دبلومة)",
+    "masters": "باحث دراسات عليا (ماجيستير)",
+    "PHD":"باحث دراسات عليا (دكتوراه)",
+    "Teachers":"ترقية اعضاء هيئة التدريس"
+}

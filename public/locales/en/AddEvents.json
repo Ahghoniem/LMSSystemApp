@@ -1,0 +1,58 @@
+{
+  "title": "Add Event",
+  "fields": {
+    "eventLanguage": "Event Language",
+    "eventType": "Event Type",
+    "oneSupervisorTrainer": "One supervisor/trainer for whole event",
+    "relatedTo": "Related To",
+    "startExamDate": "First Day Exam Date",
+    "endExamDate": "Second Day Exam Date",
+    "courseStartDate": "Course Start Date",
+    "courseEndDate": "Course End Date",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "capacity": "Capacity",
+    "trainerName": "Trainer",
+    "supervisorName": "Supervisor",
+    "examPlace": "Exam Place",
+    "field": "Course",
+    "examName": "Exam Name",
+    "firstExamName": "First Exam Name",
+    "firstExamDate": "First Exam Date"
+  },
+  "options": {
+    "select": "Select",
+    "selectEventType": "Select Event Type",
+    "selectLanguage": "Select Language",
+    "languageAr": "العربية",
+    "languageEn": "English",
+    "training": "Training",
+    "exam": "Exam",
+    "module": "Module",
+    "package": "Package"
+  },
+  "courseSupervisor": "Exam Supervisor",
+  "courseTrainer": "Course Trainer",
+  "buttons": {
+    "accept": "Submit",
+    "loading": "Loading..."
+  },
+  "errors": {
+    "required": "This field is required",
+    "startDateBeforeToday": "Start date cannot be before today",
+    "endBeforeStart": "End date must be after start date",
+    "examDateOutOfRange": "Exam date must be within event start and end dates",
+    "startBeforeEnd":"Course start date must be greater than end date of registeration"
+  },
+  "success": {
+    "trainingAdded": "Training event added successfully",
+    "examAdded": "Exam event added successfully"
+  },
+    "eventName":"Event Name in arabic",
+    "eventNameEn":"Event Name in english",
+    "type":"Type available for this event",
+    "arabic_only": "Please enter Arabic letters only",
+    "english_only": "Please enter English letters only",
+    "examDate": "Exam Date",
+    "selectedPackage": "Selected Package"
+}

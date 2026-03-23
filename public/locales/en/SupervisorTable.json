@@ -1,0 +1,20 @@
+{
+    "examName": "Exam Name",
+    "date": "Date",
+    "place": "Place",
+    "status": "Status",
+    "numberOfSubscribers": "Number of Subscribers",
+    "examsManagement": "Exams Management",
+    "opend": "Open",
+    "closed": "Closed",
+    "select": "Select",
+    "events": {
+        "title": "Exam Name",
+        "registrationStartDate": "Registration Start Date",
+        "registrationEndDate": "Registration End Date",
+        "status": "Status",
+        "limit": "Items Count"
+    }
+}
+
+

@@ -1,0 +1,13 @@
+{
+    "pageTitle": "Exam Subscribers",
+    "table": {
+        "fullName": "Full Name",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "college": "College"
+    },
+    "select": "Select",
+    "limit": "Limit"
+}
+
+

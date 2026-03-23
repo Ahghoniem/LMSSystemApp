@@ -1,0 +1,25 @@
+{
+    "pageTitle": "My Exam Results",
+    "summary": {
+        "overallStatus": "Overall Status",
+        "passedAll": "Passed all subjects",
+        "someFailed": "Some subjects failed. Retake failed exams to qualify for a certificate.",
+        "downloadCertificate": "Download Certificate"
+    },
+    "table": {
+        "name": "Exam Name",
+        "date": "Date",
+        "status": "Status",
+        "procedure": "Procedure"
+    },
+    "status": {
+        "succeeded": "Success",
+        "failed": "Failed",
+        "reserved":"Pending",
+        "absent":"Absent"
+    },
+    "requestCertificate": "Request Statement",
+    "retakeExam": "Retake Exam",
+    "result":"Grade"
+}
+

@@ -1,0 +1,21 @@
+{
+  "pageTitleTrain": "Manage Trainers",
+  "pageTitleSuper": "Manage Supervisors",
+  "pageTitleAdmin": "Manage Admins",
+  "addMember": "Add Member",
+  "limit": "Results Limit",
+  "select": "Select",
+  "searchPlaceholder": "Search...",
+  "startDate": "Start Date",
+  "endDate": "End Date",
+  "table": {
+    "fullName": "Full Name",
+    "email": "Email",
+    "status": "Status"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive"
+  }
+}
+

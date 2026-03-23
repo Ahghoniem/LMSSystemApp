@@ -1,0 +1,11 @@
+.page { display:flex; flex:1; gap:1.25rem; padding: 1.5rem 0; margin-top: 80px; min-height: 82vh; }
+.content { flex:1; padding: 0 2rem; display:flex; justify-content:center; align-items:flex-start; }
+.section { display:block; width:100%; }
+@media(min-width:767px){
+    html[dir="rtl"] .page {
+      margin-right: 70px;
+    }
+    html[dir="ltr"] .page {
+      margin-left: 70px;
+    }
+  }

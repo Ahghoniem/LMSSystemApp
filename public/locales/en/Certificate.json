@@ -1,0 +1,27 @@
+{
+  "pageTitle": "Statements Requests",
+  "downloadAll": "Download All",
+  "download": "Download",
+  "columns": {
+    "name": "Name",
+    "nationalId": "National ID",
+    "date": "Date",
+    "packageName": "Trainee Type",
+    "actions": "Actions"
+  },
+  "filters": {
+    "limit": "Page size",
+    "select": "Select",
+    "searchByName": "Search by name",
+    "searchByNationalId": "Search by national ID",
+    "searchByDate": "Search by date",
+    "searchByPackage": "Search by Trainee Type"
+  },
+  "downloadFile": {
+    "blockTitle": "Statement"
+  },
+  "diploma": "Postgraduate Researcher (Diploma)",
+    "masters": "Postgraduate Researcher (Masters)",
+    "Teachers": "Faculty Staff Promotion",
+    "PHD":"Postgraduate Researcher (PHD)"
+}

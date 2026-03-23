@@ -1,0 +1,20 @@
+{
+  "title": "System Data Initialization",
+  "fields": {
+    "firstSignerName": "First signer name in the certificate",
+    "secondSignerName": "Second signer name in the certificate",
+    "firstSignerJob": "First signer job title",
+    "secondSignerJob": "Second signer job title",
+    "allowedExamAttempts": "Allowed exam attempts count"
+  },
+  "buttons": {
+    "update": "Update"
+  },
+  "errors": {
+    "required": "This field is required",
+    "arabic_only": "Please enter Arabic letters only",
+    "invalidNumber": "Please enter a valid positive number"
+  },
+  "sucess":"System data has been updated succuessfully",
+  "error":"Error in updating system data"
+}

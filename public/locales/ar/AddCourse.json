@@ -1,0 +1,40 @@
+{
+  "titles": {
+    "addNewCourse": "إضافة كورس جديد"
+  },
+  "fields": {
+    "courseNameEn": "اسم الكورس بالإنجليزية",
+    "courseNameAr": "اسم الكورس بالعربية",
+    "title": "العنوان",
+    "priceForEgypt": "السعر للمصريين",
+    "priceForForigner": "السعر للأجانب",
+    "currency": "العملة"
+  },
+  "placeholders": {
+    "courseNameEn": "أدخل اسم الكورس بالإنجليزية",
+    "courseNameAr": "أدخل اسم الكورس بالعربية",
+    "title": "أدخل عنوان الكورس",
+    "priceForEgypt": "أدخل السعر للمصريين",
+    "priceForForigner": "أدخل السعر للأجانب",
+    "currency": "أدخل العملة (مثال: جنيه، دولار)"
+  },
+  "options": {
+    "selectCurrency": "اختر العملة"
+  },
+  "buttons": {
+    "back": "رجوع",
+    "addCourse": "إضافة كورس",
+    "loading": "جاري الإضافة..."
+  },
+  "errors": {
+    "required": "هذا الحقل مطلوب",
+     "arabic_only": "الرجاء إدخال أحرف عربية فقط",
+    "english_only": "الرجاء إدخال أحرف إنجليزية فقط",
+     "invalidNumber": "الرجاء إدخال رقم صحيح موجب"
+  },
+  "messages": {
+    "courseAdded": "تم إضافة الكورس بنجاح",
+    "errorAdding": "حدث خطأ في إضافة الكورس"
+  }
+}
+

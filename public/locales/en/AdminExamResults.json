@@ -1,0 +1,27 @@
+{
+    "pageTitle": "Exam Results",
+    "filters": {
+      "limit": "Items per page",
+      "select": "Select",
+      "name": "Student Name",
+      "examName": "Exam Name",
+      "nationalId": "National ID",
+      "date": "Date",
+      "status": "Status"
+    },
+    "columns": {
+      "name": "Name",
+      "nationalId": "National ID",
+      "examName": "Exam Name",
+      "grade": "Grade",
+      "status": "Status",
+      "date": "Date",
+      "noResult": "Not yet available"
+    },
+    "status": {
+      "failed": "Failed",
+      "succeeded": "Succeeded",
+      "absent": "Absent",
+      "reserved": "Not take the exam yet"
+    }
+  }

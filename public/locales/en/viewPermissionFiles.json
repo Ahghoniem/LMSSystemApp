@@ -1,0 +1,10 @@
+{
+    "permissionFiles": "Permission Files",
+    "managePermissionFilesDesc": "Manage the system's permission files, including viewing and editing details.",
+    "nameAr": "Name (Arabic)",
+    "nameEn": "Name (English)",
+    "createdAt": "Created At",
+    "itemsPerPage": "Items per Page",
+    "select": "Select...",
+    "search": "Search"
+  }

@@ -1,0 +1,12 @@
+{
+    "pageTitle": "Manage Packages",
+    "select": "Select",
+    "packages": {
+        "name": "Name",
+        "elements": "Elements",
+        "numberOfElements": "No of Elements",
+        "availableType": "The Available Type",
+        "limit": "Limit"
+    }
+}
+

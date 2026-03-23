@@ -1,0 +1,179 @@
+.studentsTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+
+.studentsTable td {
+  padding: 18px 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  word-break: break-word;
+}
+
+.studentsTable th {
+  background: #0a2a4d;
+  color: #fff;
+  font-weight: 700;
+  border-bottom: 2px solid #B38E19;
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.studentsTable tr:hover {
+  background: #fafafa;
+}
+
+.clickableRow {
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.clickableRow:hover {
+  background: #f0f6ff !important;
+}
+
+.emptyRow {
+  color: #6b7280;
+  padding: 18px 12px;
+  font-size: 14px;
+}
+
+.btnAction {
+  padding: 10px 20px;
+  background: #B38E19;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .25s;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.btnAction:hover {
+  background: #8f7316;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 920px) {
+
+  .studentsTable thead {
+    display: none;
+  }
+
+  .studentsTable,
+  .studentsTable tbody,
+  .studentsTable tr,
+  .studentsTable td {
+    display: block;
+    width: 100%;
+  }
+
+  .studentsTable tr {
+    background: #fff;
+    border: 1px solid #D1D5DB;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.10);
+    margin: 10px 0;
+    padding: 10px 12px;
+  }
+
+  .studentsTable td {
+    border: none;
+    padding: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    word-break: break-word;
+  }
+
+  .studentsTable td::before {
+    content: attr(data-label);
+    color: #6b7280;
+    font-weight: 800;
+    flex: 0 0 min(140px, 40%);
+    min-width: 0;
+  }
+
+  html[dir="rtl"] .studentsTable td::before {
+    text-align: right;
+    border-right: 3px solid #B38E19;
+    padding-right: 10px;
+  }
+
+  html[dir="ltr"] .studentsTable td::before {
+    text-align: left;
+    border-left: 3px solid #B38E19;
+    padding-left: 10px;
+  }
+
+  .studentsTable td[data-label="الإجراءات"] {
+    justify-content: flex-start;
+    margin-top: 4px;
+  }
+
+  .emptyRowMobile::before {
+    content: none !important;
+  }
+
+  /* Prevent badges or buttons from overflowing */
+  .studentsTable td span,
+  .studentsTable td button,
+  .studentsTable td div {
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
+/* EMPTY STATE */
+
+.emptyState {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: #374151;
+}
+
+.emptyState i {
+  font-size: 36px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.emptyState h3 {
+  margin: 10px 0;
+  font-weight: 600;
+  color: #0a2a4d;
+}
+
+.emptyState p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* DESKTOP */
+
+@media (min-width:921px) {
+
+  .studentsTable {
+    border: 1px solid #D1D5DB;
+  }
+
+  .studentsTable th,
+  .studentsTable td {
+    border-bottom: 1px solid #D1D5DB;
+  }
+}
+
+.rowClic {
+  cursor: pointer;
+}

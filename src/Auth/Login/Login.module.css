@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Cairo", Tahoma, sans-serif;
+  }
+  
+  .auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    min-height: 92vh;
+    background: #f5f6f8;
+  }
+  
+  .emailBox {
+    margin-top: 55px;
+    background: #fff;
+    padding: 22px 24px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    width: fit-content;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .verificationHeader {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .verificationHeader h1 {
+    font-weight: 800;
+    font-size: 24px;
+    color: #163a63;
+  }
+  
+  .verificationSubtitle {
+    font-size: 14px;
+    color: #888;
+    margin-top: 8px;
+  }
+  
+  .formGroup {
+    margin-bottom: 14px;
+    width: 100%;
+  }
+  
+  .formGroup input {
+    font-size: 15px;
+    padding: 10px 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+  }
+  
+  .formGroup input:focus {
+    border-color: #163a63;
+    box-shadow: 0 0 0 4px rgba(22, 58, 99, 0.06);
+  }
+  
+  .btn {
+    display: block;
+    margin-top: 10px;
+    background: #163a63;
+    color: #fff;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #0d2a49;
+  }
+  .actions{
+    display: flex;
+    gap: 15px;
+  }
+  .btnCancel{
+    display: block;
+    margin-top: 10px;
+    background-color: #6B7280;
+    color: #fff;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  .btnCancel:hover{
+    background-color: #D1D5DB;
+  }
+  
+  .checkboxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.3rem 0;
+    width: 100%;
+  }
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .checkboxLabel input {
+    width: 15px;
+    height: 15px;
+    accent-color: #163a63;
+    cursor: pointer;
+  }
+  
+  .forgotPassword {
+    color: #163a63;
+    text-decoration: none;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  .error{
+    color: red;
+    font-size: 14px;
+  }
+  /* Disabled button */
+.btn:disabled {
+    background: #a0a0a0; /* Gray background */
+    color: #f0f0f0;      /* Lighter text */
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  /* Optional: Disabled input */
+  .formGroup input:disabled {
+    background: #f0f0f0;
+    color: #888;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .formGroup input {
+      width: 100%;
+    }
+  }
+  @media(min-width:1550px)
+  {
+    .auth{
+        min-height: 100vh;
+    }
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .passwordGroup {
+    position: relative;
+  }
+  
+  .eyeIcon {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    left: 10px;/* adjust if using RTL */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    font-size: 1rem;
+  }
+  
+  .eyeIcon:hover {
+    color: #333;
+  }
+  html[dir="ltr"] .formGroup input {
+    text-align: left;
+  }
+  html[dir="rtl"] .formGroup input {
+    text-align: right;
+  }
+  html[dir="ltr"] .emailBox {
+    text-align: left;
+  }
+  html[dir="rtl"] .emailBox {
+    text-align: right;
+  }
+
+
+  html[dir="ltr"] .eyeIcon {
+    right: 10px;
+    left: auto;
+    width: 15px;
+  }

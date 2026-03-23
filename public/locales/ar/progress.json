@@ -1,0 +1,10 @@
+{
+    "progressBar": {
+      "registered": "تم التسجيل",
+      "paid": "تم الدفع",
+      "reservedTraining": "تم حجز الدورة",
+      "examined": "تم الامتحان",
+      "completed": "تم الانتهاء من الدورة",
+      "reservedExam":"تم حجز الامتحان"
+    }
+  }

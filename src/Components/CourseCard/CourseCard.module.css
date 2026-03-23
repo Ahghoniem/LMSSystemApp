@@ -1,0 +1,155 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+    --font-family: "Cairo", sans-serif;
+    --dark-blue:#0a2a4d;
+    --gold:#b38e19;
+    --page-bg:#eef2f6;
+    --text:#0b1424;
+    --muted:#6b7280;
+    --white:#fff;
+    --card-border:#e7ebf0;
+    --shadow:0 8px 18px rgba(3,24,46,.08);
+    --w-regular:400; 
+    --w-medium:500; 
+    --w-semibold:600;
+    --w-bold:700;
+  }
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(240px, 32vw, 320px), 1fr));
+    gap: clamp(12px, 2vw, 22px);
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  /* Course Card */
+  .courseCard {
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: clamp(14px, 2.2vw, 22px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.15s transform, 0.2s box-shadow;
+    min-height: clamp(240px, 36vw, 290px);
+  }
+  
+  .courseCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(3, 24, 46, 0.1);
+  }
+  
+  .cardIcon {
+    font-size: clamp(24px, 2.2vw, 30px);
+    color: var(--gold);
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  
+  .cardTitle {
+    font-size: clamp(1rem, 1.6vw, 1.125rem);
+    font-weight: var(--w-semibold);
+    color: var(--dark-blue);
+    margin-bottom: 6px;
+  }
+  
+  .cardDesc {
+    color: var(--muted);
+    font-weight: var(--w-medium);
+    font-size: clamp(0.9rem, 1.4vw, 0.95rem);
+    line-height: 1.8;
+    margin-bottom: clamp(10px, 1.8vw, 16px);
+    min-height: 48px;
+  }
+  
+  .cardMeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(12px, 2vw, 18px);
+    color: var(--dark-blue);
+    font-weight: var(--w-semibold);
+    margin-bottom: clamp(10px, 1.8vw, 14px);
+    font-size: clamp(0.85rem, 1.4vw, 0.95rem);
+  }
+  
+  .metaItem {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .weeks i {
+    color: var(--gold);
+    margin-left: 6px;
+  }
+  
+  /* Level badge */
+  .level {
+    gap: 10px;
+  }
+  
+  .levelText {
+    min-width: 4.5ch;
+    text-align: right;
+  }
+  
+  .levelBadge {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 16px;
+  }
+  
+  .bar {
+    width: 6px;
+    border-radius: 2px;
+    background: #e2e8f0;
+  }
+  
+  .levelBadge .bar:nth-child(1) {
+    height: 8px;
+  }
+  
+  .levelBadge .bar:nth-child(2) {
+    height: 12px;
+  }
+  
+  .levelBadge .bar:nth-child(3) {
+    height: 16px;
+  }
+  
+  .level--beginner .bar:nth-child(1) {
+    background: var(--gold);
+  }
+  
+  .level--intermediate .bar:nth-child(-n + 2) {
+    background: var(--gold);
+  }
+  
+  .level--advanced .bar:nth-child(-n + 3) {
+    background: var(--gold);
+  }
+  
+  .btnPrimary{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    gap:.5rem;
+    width:100%;
+    background:var(--dark-blue);
+    color:#fff;
+    border:none;
+    border-radius:12px;
+    padding:clamp(10px,1.8vw,12px) 14px;
+    font-weight:var(--w-semibold);
+    font-family:var(--font-family);
+    cursor:pointer;
+    transition:filter .15s ease, transform .08s ease;
+    text-decoration:none
+  }
+  .btnPrimary:hover{filter:brightness(1.08)}
+  .btnPrimary:active{transform:translateY(1px)}

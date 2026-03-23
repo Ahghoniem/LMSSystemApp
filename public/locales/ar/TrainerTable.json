@@ -1,0 +1,23 @@
+{
+    "trainingName": "اسم التدريب",
+    "startDate": "تاريخ بدء الدورة",
+    "endDate": "تاريخ انتهاء الدورة",
+    "capacity": "السعة",
+    "registeredCount": "عدد المسجلين",
+    "status": "الحالة",
+    "trainingsManagement": "إدارة التدريبات",
+    "opend":"مفتوح",
+    "closed":"مغلق",
+    "events": {
+          "title": "اسم التدريب",
+          "training": "تدريب",
+          "registrationStartDate": "تاريخ بدء الدورة",
+          "registrationEndDate": "تاريخ انتهاء الدورة",
+          "status": "الحالة",
+          "limit":"عدد العناصر"
+        },
+         "actions":"الاجراءات",
+         "sessions":"الجلسات",
+         "users":"المتدربين"
+  }
+  

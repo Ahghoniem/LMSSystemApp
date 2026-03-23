@@ -1,0 +1,181 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  min-height: 92vh;
+  align-items: center;
+  background: #f7f8fa;
+  font-family: 'Cairo', sans-serif;
+  /* direction: rtl; */
+}
+
+.authCard {
+  margin-top: 50px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.title {
+  text-align: center;
+  color: #1e3a8a;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin: 0.5rem 0 2rem;
+}
+
+.error{
+  color: red;
+  font-size: 14px;
+}
+.progressbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.progressbar::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: #ddd;
+  z-index: -1;
+}
+
+.progressStep {
+  width: 25%;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  color: #555;
+}
+
+.progressStep::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 40px;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 13px;
+  color: #333;
+}
+
+.progressStep span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  border: 2px solid #1e3a8a;
+  background: #fff;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.activeStep span,
+.completedStep span {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+.formStep {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+
+input, select {
+  padding: 10px;
+  max-height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+/* Buttons */
+.btns {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.btn:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .authCard { width: 90%; padding: 1.5rem 1rem; }
+  .title { font-size: 1.5rem; }
+  .subtitle { font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .formStep { grid-template-columns: 1fr; gap: 0.8rem; }
+}
+
+@media (max-width: 480px) {
+
+  .authCard { width: 95%; padding: 1rem; margin-top: 20%; }
+  .title { font-size: 1.2rem; }
+  .subtitle { font-size: 0.8rem; margin-bottom: 1rem; }
+  .formStep { gap: 0.6rem; 
+  }
+  input, select { 
+    padding: 6px;
+    font-size: 12px; 
+  }
+  .btn { padding: 6px 12px; font-size: 12px; }
+  .btns { margin-top: 1.5rem; }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.load{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.formStep input[type="tel"]{
+  text-align: right;
+}
+
+.fieldLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  font-family: 'Cairo', sans-serif;
+}

@@ -1,0 +1,38 @@
+{
+    "productDetails": "Product Details",
+    "englishName": "English Name",
+    "arabicName": "Arabic Name",
+    "allowedUsers": "Allowed Users",
+    "numberOfCourses": "Number of Courses",
+    "pricingForEgyptians": "Pricing for Egyptians",
+    "pricingForForeigners": "Pricing for Foreigners",
+    "currency": "Currency For Foreigners",
+    "edit": "Edit Product",
+    "saveChanges": "Save Changes",
+    "cancel": "Cancel",
+    "delete": "Delete Product",
+    "saving": "Saving...",
+    "deleting": "Deleting...",
+    "updateSuccess": "Product updated successfully",
+    "updateError": "Error occurred while updating",
+    "deleteConfirm": "Are you sure you want to delete this product?",
+    "deleteSuccess": "Product deleted successfully",
+    "deleteError": "Error occurred while deleting",
+    "productNotFound": "Product not found",
+    "backToList": "Back to List",
+    "selectCurrency": "Select currency",
+    "selectReceipt": "Select receipt",
+    "receiptEgyptians": "Receipt (Egyptians)",
+    "receiptForeigners": "Receipt (Foreigners)",
+    "diploma": "Postgraduate Researcher (Diploma)",
+    "masters": "Postgraduate Researcher (Masters)",
+    "Teachers": "Faculty Staff Promotion",
+    "PHD":"Postgraduate Researcher (PHD)",
+    "errors": {
+    "required": "This field is required",
+    "arabic_only": "Please enter Arabic letters only",
+    "english_only": "Please enter English letters only"
+  },
+  "popupMessage":"Are you sure you want to delete this product"
+}
+

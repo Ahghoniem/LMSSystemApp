@@ -1,0 +1,20 @@
+{
+  "title": "Attendance Details",
+  "filters": {
+    "searchByName": "Search by name",
+    "searchBySessionName":"Search by session name",
+    "name": "Name",
+    "fromDate": "From date",
+    "toDate": "To date"
+  },
+  "table": {
+    "name": "Name",
+    "date": "Date",
+    "time": "Time",
+    "status": "Status",
+    "presence": "Presence",
+    "SessionName":"Session Name"
+  },
+  "select": "Select",
+  "limit": "Limit"
+}

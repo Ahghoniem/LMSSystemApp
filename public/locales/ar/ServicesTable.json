@@ -1,0 +1,14 @@
+{
+  "pageTitle": "ادارة الخدمات",
+  "pageTitle2": "ادارة الايصالات",
+  "select": "اختر",
+  "services": {
+    "englishName": "الاسم الإنجليزي",
+    "arabicName": "الاسم",
+    "pricingForEgyptians": "السعر للمصريين",
+    "pricingForForeigners": "السعر للأجانب",
+    "limit": "عدد العناصر",
+    "totalAmount":"القيمة الكاملة",
+    "currency":"العملة"
+  }
+}

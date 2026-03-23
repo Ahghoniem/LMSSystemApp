@@ -1,0 +1,10 @@
+{
+  "pageTitle": "تفاصيل الامتحان",
+  "listSummary": "امتحانات",
+  "listSummaryFull": "{{count}} امتحانات",
+  "table": {
+    "examName": "اسم الامتحان",
+    "examDate": "تاريخ الامتحان",
+    "examLocation": "مكان الامتحان"
+  }
+}

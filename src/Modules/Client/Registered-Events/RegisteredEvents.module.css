@@ -1,0 +1,304 @@
+.cardContainer {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px 20px 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+}
+
+.pageTitle {
+  font-size: 26px;
+  margin: 10px 0 6px;
+  font-weight: 800;
+  color: #0a2a4d;
+  text-align: center;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 80px;
+  min-height: 81vh;
+  transition: margin-right .4s ease;
+  -webkit-transition: margin-right .4s ease;
+  -moz-transition: margin-right .4s ease;
+  -ms-transition: margin-right .4s ease;
+  -o-transition: margin-right .4s ease;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 16px 18px;
+  background: #f9fafb;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+
+.cardsWrapper .card:last-child {
+  border-bottom: none;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #b38e19;
+  margin: 0;
+}
+
+.statusBadge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.opend {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.closed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.cardBody {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px 16px;
+}
+
+.cardRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.emptyText {
+  margin-top: 16px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modalContent {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 34px;
+  max-width: min(1000px, 95vw);
+  width: max-content;
+  min-width: 320px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.25);
+  color: #0a2a4d;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.modalTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.modalDates {
+  display: flex;
+  justify-content: flex-start;
+  gap: 70px;
+  margin-top: 18px;
+  margin-bottom: 26px;
+}
+
+.dateItem {
+  display: flex;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+.dateText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.dateNumber {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a2a4d;
+  margin-inline-start: 4px;
+}
+
+.modalBody {
+  margin-top: 8px;
+}
+
+.otherCoursesTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.otherCoursesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 20px;
+}
+
+.courseTag {
+  flex: 1 1 calc((100% - 40px) / 3);
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 14px;
+  color: #0a2a4d;
+  border: 1px solid #e5e7eb;
+}
+
+.courseName {
+  white-space: nowrap;
+}
+
+.courseDoctor {
+  display: block;
+  margin-top: 4px;
+  font-weight: 600;
+  color: #000000;
+}
+
+
+@media (min-width: 778px) {
+  html[dir="rtl"] .cardContainer {
+    margin-right: 70px;
+  }
+  html[dir="ltr"] .cardContainer {
+    margin-left: 70px;
+  }
+}
+
+  @media(min-width:767px)
+  {
+    html[dir="rtl"] .modalContent {
+      margin-right: 75px;
+      margin-left: 10px;
+    }
+    html[dir="ltr"] .modalContent {
+      margin-left: 75px;
+      margin-right: 10px;
+    }
+  }
+
+/* Skeleton Base */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #e5e7eb 25%,
+    #f3f4f6 37%,
+    #e5e7eb 63%
+  );
+  background-size: 400% 100%;
+  animation: skeletonLoading 1.4s ease infinite;
+  border-radius: 6px;
+}
+
+@keyframes skeletonLoading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* Card skeleton */
+.skeletonCard {
+  border-radius: 12px;
+  padding: 16px 18px;
+  background: #f9fafb;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Header */
+.skeletonTitle {
+  height: 18px;
+  width: 40%;
+}
+
+.skeletonStatus {
+  height: 20px;
+  width: 70px;
+  border-radius: 999px;
+}
+
+/* Body */
+.skeletonLabel {
+  height: 10px;
+  width: 50%;
+  margin-bottom: 4px;
+}
+
+.skeletonValue {
+  height: 14px;
+  width: 70%;
+}

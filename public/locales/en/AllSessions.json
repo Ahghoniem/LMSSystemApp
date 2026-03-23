@@ -1,0 +1,43 @@
+{
+  "allSessions": "All Sessions",
+  "trainingSessions": "Training Sessions",
+  "addSession": "Add Session",
+  "backToTrainings": "Back to Trainings",
+
+  "noSessions": "No sessions available",
+
+  "duration": "Duration",
+
+  "viewDetails": "View Details",
+  "delete": "Delete",
+  "deleting": "Deleting...",
+  "confirmDelete": "Are you sure you want to delete this session?",
+  "sessionDeleted": "Session deleted successfully",
+  "deleteError": "Failed to delete session",
+  "deleteSessionTitle":"Delete session?",
+
+  "sessionUpdated": "Session updated successfully",
+  "updateError": "Failed to update session",
+
+  "attendanceDetails": "Attendance Details",
+  "trainingMaterials": "Training Materials",
+  "qrCode": "QR Code",
+
+  "materials": {
+    "title": "Training Materials",
+    "empty": "No materials yet.",
+    "add": "Add Material",
+    "edit": "Edit Material",
+    "delete": "Delete",
+    "deleteConfirmTitle": "Delete material?",
+    "deleteConfirmText": "Are you sure you want to delete this material?",
+    "cancel": "Cancel",
+    "save": "Save",
+    "uploadFile": "Upload File",
+    "uploadRequired": "Please upload a file",
+    "deleteSuccess": "Material deleted successfully",
+    "deleteError": "Failed to delete material",
+    "addSuccess": "Material added successfully",
+    "addError": "Failed to add material"
+  }
+}

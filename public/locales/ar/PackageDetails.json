@@ -1,0 +1,30 @@
+{
+    "packageDetails": "تفاصيل الحزمة",
+    "englishName": "الاسم الإنجليزي",
+    "arabicName": "الاسم العربي",
+    "elements": "العناصر",
+    "numberOfElements": "عدد العناصر",
+    "availableType": "النوع المتاح",
+    "edit": "تعديل الحزمة",
+    "saveChanges": "حفظ التعديلات",
+    "cancel": "إلغاء",
+    "delete": "حذف الحزمة",
+    "saving": "جاري الحفظ...",
+    "deleting": "جاري الحذف...",
+    "updateSuccess": "تم تحديث الحزمة بنجاح",
+    "updateError": "حدث خطأ أثناء التحديث",
+    "deleteConfirm": "هل أنت متأكد من حذف هذه الحزمة؟",
+    "deleteSuccess": "تم حذف الحزمة بنجاح",
+    "deleteError": "حدث خطأ أثناء الحذف",
+    "packageNotFound": "الحزمة غير موجودة",
+    "backToList": "العودة للقائمة",
+    "item": "عنصر",
+    "select": "اختر",
+    "errors": {
+        "required": "هذا الحقل مطلوب",
+        "arabic_only": "الرجاء إدخال أحرف عربية فقط",
+        "english_only": "الرجاء إدخال أحرف إنجليزية فقط"
+    },
+    "popupMessage": "هل انت متأكد من انك تريد حذف هذه الحزمة"
+}
+

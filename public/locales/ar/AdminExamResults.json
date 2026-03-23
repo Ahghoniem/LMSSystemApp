@@ -1,0 +1,27 @@
+{
+    "pageTitle": "نتائج الامتحان",
+    "filters": {
+      "limit": "عدد العناصر في الصفحة",
+      "select": "اختر",
+      "name": "اسم الطالب",
+      "examName": "اسم الامتحان",
+      "nationalId": "الرقم القومي",
+      "date": "التاريخ",
+      "status": "الحالة"
+    },
+    "columns": {
+      "name": "الاسم",
+      "nationalId": "الرقم القومي",
+      "examName": "اسم الامتحان",
+      "grade": "الدرجة",
+      "status": "الحالة",
+      "date": "التاريخ",
+       "noResult": "لم تظهر بعد"
+    },
+    "status": {
+      "failed": "راسب",
+      "succeeded": "ناجح",
+      "absent": "غائب",
+      "reserved": "الطالب لم يؤدِ الامتحان بعد"
+    }
+  }

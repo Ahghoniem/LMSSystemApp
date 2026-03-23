@@ -1,0 +1,25 @@
+{
+  "hero_title": "Digital Transformation at Capitail University",
+  "hero_description": "An integrated system to facilitate access to digital services for students and faculty members.",
+
+  "features_title": "User Features",
+  "features_subtitle": "Everything you need to easily manage training and exams.",
+
+  "feature1_title": "Easy and Fast Registration",
+  "feature1_desc": "Register online using your national ID with automatic OCR verification.",
+
+  "feature2_title": "Personal Dashboard",
+  "feature2_desc": "Track your information, training and exam schedules, and results in one place.",
+
+  "feature3_title": "Easy Exam Retake",
+  "feature3_desc": "If you fail, you can apply to retake the exam and pay directly through the system.",
+
+  "feature4_title": "Official Digital Certificates",
+  "feature4_desc": "Obtain a certified digital success certificate from the Supreme Council of Universities.",
+
+  "feature5_title": "Instant Notifications",
+  "feature5_desc": "Receive alerts via email, WhatsApp, and SMS for all updates.",
+
+  "feature6_title": "Official Statements",
+  "feature6_desc": "You can request a success statement or an officially certified document directly from the system."
+}

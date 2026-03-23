@@ -1,0 +1,20 @@
+{
+  "title": "تفاصيل الحضور",
+  "filters": {
+    "searchByName": "بحث بالاسم",
+    "searchBySessionName":"بحث باسم الجلسة",
+    "name": "الاسم",
+    "fromDate": "من تاريخ",
+    "toDate": "إلى تاريخ"
+  },
+  "table": {
+    "name": "الاسم",
+    "date": "التاريخ",
+    "time": "الوقت",
+    "status": "الحالة",
+    "presence": "حضور",
+    "SessionName":"اسم الجلسة"
+  },
+  "select": "اختر",
+  "limit": "عدد العناصر"
+}

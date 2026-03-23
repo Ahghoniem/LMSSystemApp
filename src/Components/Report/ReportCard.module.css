@@ -1,0 +1,150 @@
+.reportCard {
+  background: var(--white);
+  border: 2px solid var(--card-border, #d0d7e2);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(3, 24, 46, 0.12);
+  padding: clamp(20px, 2.4vw, 28px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.15s transform, 0.2s box-shadow;
+  min-height: clamp(240px, 36vw, 280px);
+}
+
+.reportCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(3, 24, 46, 0.15);
+}
+
+.cardIcon {
+  font-size: clamp(28px, 2.4vw, 34px);
+  color: var(--gold, #f6c343);
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+  font-weight: 700;
+  color: var(--dark-blue, #163a63);
+  margin-bottom: 10px;
+}
+
+.cardDesc {
+  color: var(--muted, #555);
+  font-weight: 500;
+  font-size: clamp(0.9rem, 1.4vw, 1rem);
+  line-height: 1.8;
+  margin-bottom: clamp(16px, 1.8vw, 22px);
+  min-height: 48px;
+}
+.btnPrimary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  background: var(--dark-blue, #163a63);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: clamp(10px, 1.8vw, 12px) 14px;
+  font-weight: 600;
+  font-family: var(--font-family, "Cairo", sans-serif);
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.08s ease;
+  text-decoration: none;
+}
+
+.btnPrimary:hover {
+  filter: brightness(1.08);
+}
+
+.btnPrimary:active {
+  transform: translateY(1px);
+}
+.popupOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup {
+  background: #fff;
+  border-radius: 16px;
+  padding: 35px 25px;
+  width: 480px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.popupHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.popupIcon {
+  color: #163a63;
+  font-size: 26px;
+}
+
+.popupText {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.popupButtons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.popupButtons button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.pdfBtn,
+.excelBtn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.pdfBtn:hover,
+.excelBtn:hover {
+  background-color: #1f8a37;
+}
+
+.cancelBtn {
+  background-color: #6b7280;
+  color: #fff;
+}
+
+.cancelBtn:hover {
+  background-color: #4b5563;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

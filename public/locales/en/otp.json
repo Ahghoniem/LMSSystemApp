@@ -1,0 +1,9 @@
+{
+  "title": "Confirm Code",
+  "subtitle": "Enter the verification code sent to your email",
+  "noCode": "Didn't receive the code?",
+  "resend": "Resend",
+  "cancel": "Cancel",
+  "verify": "Verify",
+  "loading":"Loading"
+}

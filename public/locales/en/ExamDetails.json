@@ -1,0 +1,10 @@
+{
+  "pageTitle": "Exam Details",
+  "listSummary": "exams",
+  "listSummaryFull": "{{count}} exams",
+  "table": {
+    "examName": "Exam Name",
+    "examDate": "Exam Date",
+    "examLocation": "Exam Location"
+  }
+}

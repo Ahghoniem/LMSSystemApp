@@ -1,0 +1,30 @@
+{
+  "serviceDetails": "تفاصيل الخدمه",
+  "englishName": "الاسم الإنجليزي",
+  "arabicName": "الاسم العربي",
+  "pricingForEgyptians": "السعر للمصريين",
+  "pricingForForeigners": "السعر للأجانب",
+  "currency": "العملة لغير المصريين",
+  "edit": "تعديل الخدمة",
+  "saveChanges": "حفظ التعديلات",
+  "cancel": "إلغاء",
+  "delete": "حذف الخدمة",
+  "saving": "جاري الحفظ...",
+  "deleting": "جاري الحذف...",
+  "updateSuccess": "تم تحديث الخدمة بنجاح",
+  "updateError": "حدث خطأ أثناء التحديث",
+  "deleteSuccess": "تم حذف الخدمة بنجاح",
+  "deleteError": "حدث خطأ أثناء الحذف",
+  "serviceNotFound": "الخدمة غير موجودة",
+  "backToList": "العودة للقائمة",
+  "selectReceipt": "اختر الإيصال",
+    "receiptEgyptians": "ايصال المصريين",
+    "receiptForeigners": "ايصال الوافيدين",
+  "selectCurrency": "اختر العملة",
+  "errors": {
+    "required": "هذا الحقل مطلوب",
+    "arabic_only": "الرجاء إدخال أحرف عربية فقط",
+    "english_only": "الرجاء إدخال أحرف إنجليزية فقط"
+  },
+  "popupMessage": "هل انت متأكد من انك تريد مسح هذه الخدمة"
+}
