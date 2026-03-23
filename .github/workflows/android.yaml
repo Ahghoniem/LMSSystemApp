@@ -2,8 +2,11 @@ name: Android Builder
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - '*'
+
+permissions:
+  contents: write
 
 jobs:
   capBuild:
@@ -49,11 +52,9 @@ jobs:
           name: LMS.apk
           path: android/app/build/outputs/apk/debug/LMS.apk
 
-      - name: Upload to GitHub Release
+      - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
-        if: github.ref_name == 'main'
         with:
-          tag_name: 'LMS.apk'
           files: android/app/build/outputs/apk/debug/LMS.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
