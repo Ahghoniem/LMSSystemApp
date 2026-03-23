@@ -1,0 +1,10 @@
+{
+  "appId": "com.example.app",
+  "appName": "LMS",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}
