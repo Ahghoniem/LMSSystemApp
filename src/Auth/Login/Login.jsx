@@ -198,9 +198,7 @@ export default function Login() {
       } catch (error) {
         setLoading(false);
         toast.error(
-          lang === "ar"
-            ? splitLang(error.response?.data?.message).ar
-            : splitLang(error.response?.data?.message).en || "حدث خطأ",
+          error.response || "حدث خطأ",
           {
             position: "top-center",
             style: { backgroundColor: "red", color: "white" },
